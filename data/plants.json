@@ -2,580 +2,1465 @@
   {
     "id": 1,
     "name": "Tomato",
-    "category": ["nightshade", "fruit-vegetable"],
-    "seed_per_sqft": 30,
+    "category": [
+      "nightshade",
+      "fruit-vegetable"
+    ],
     "yield_per_plant": 15,
     "calories_per_lb": 82,
     "days_to_maturity": 75,
     "harvest_period_weeks": 10,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 50 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 46 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 5],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          5
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 4
   },
   {
     "id": 2,
     "name": "Bell Pepper",
-    "category": ["nightshade"],
-    "seed_per_sqft": 25,
+    "category": [
+      "nightshade"
+    ],
     "yield_per_plant": 5,
     "calories_per_lb": 131,
     "days_to_maturity": 70,
     "harvest_period_weeks": 12,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 6, "max": 11 },
-      "greenhouse_zones": { "min": 4, "max": 5 },
-      "impossible_zones": [1, 2, 3]
+      "outdoor_zones": {
+        "min": 6,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 4,
+        "max": 5
+      },
+      "impossible_zones": [
+        1,
+        2,
+        3
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 48 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 44 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [4, 5],
-        "greenhouse_only": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 38 }
+        "zone_range": [
+          4,
+          5
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 4
   },
   {
     "id": 3,
     "name": "Cucumbers",
-    "category": ["cucurbit"],
-    "seed_per_sqft": 20,
+    "category": [
+      "cucurbit"
+    ],
     "yield_per_plant": 10,
     "calories_per_lb": 65,
     "days_to_maturity": 55,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 10 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 44 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 36 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 4
   },
   {
     "id": 4,
     "name": "Zucchini",
-    "category": ["cucurbit"],
-    "seed_per_sqft": 18,
+    "category": [
+      "cucurbit"
+    ],
     "yield_per_plant": 12,
     "calories_per_lb": 73,
     "days_to_maturity": 50,
     "harvest_period_weeks": 10,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 25, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 44 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 25,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 27, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 27,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 27, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 27,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 27, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 27,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 4
   },
   {
     "id": 5,
     "name": "Carrots",
-    "category": ["root-vegetable"],
-    "seed_per_sqft": 16,
+    "category": [
+      "root-vegetable"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 186,
     "days_to_maturity": 70,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 16, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 2, "transplant_week": 2, "first_harvest_week": 12, "last_harvest_week": 50 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 3,
+          "transplant_week": 6,
+          "first_harvest_week": 16,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 1,
+          "transplant_week": 2,
+          "first_harvest_week": 12,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 16, "last_harvest_week": 46 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 7,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 3,
+          "transplant_week": 6,
+          "first_harvest_week": 16,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 11,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 7,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 9,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 2
   },
   {
     "id": 6,
     "name": "Lettuce",
-    "category": ["leafy-greens"],
-    "seed_per_sqft": 4,
+    "category": [
+      "leafy-greens"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 68,
     "days_to_maturity": 45,
     "harvest_period_weeks": 3,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 4, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 3 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 4,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 3
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 18, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 14, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 14,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 20, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 16, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 20,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 16,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [2, 3],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 22, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          3
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 22,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 3
   },
   {
     "id": 7,
     "name": "Spinach",
-    "category": ["leafy-greens"],
-    "seed_per_sqft": 9,
+    "category": [
+      "leafy-greens"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 104,
     "days_to_maturity": 40,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 16, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 6, "first_harvest_week": 12, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 16,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 12,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 18, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 8, "first_harvest_week": 14, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 14,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 22, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 18, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 22,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 20, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 20,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 3
   },
   {
     "id": 8,
     "name": "Green Beans",
-    "category": ["legume"],
-    "seed_per_sqft": 9,
+    "category": [
+      "legume"
+    ],
     "yield_per_plant": 2,
     "calories_per_lb": 141,
     "days_to_maturity": 55,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 44 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 28, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 19,
+          "transplant_week": 20,
+          "first_harvest_week": 28,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 15,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 17,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   },
   {
     "id": 9,
     "name": "Broccoli",
-    "category": ["cruciferous"],
-    "seed_per_sqft": 18,
+    "category": [
+      "cruciferous"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 154,
     "days_to_maturity": 70,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 10,
     "name": "Kale",
-    "category": ["leafy-greens", "cruciferous"],
-    "seed_per_sqft": 12,
+    "category": [
+      "leafy-greens",
+      "cruciferous"
+    ],
     "yield_per_plant": 2,
     "calories_per_lb": 222,
     "days_to_maturity": 55,
     "harvest_period_weeks": 12,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 48 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 52 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 48
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 52
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 50 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 46 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 38 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 11,
     "name": "Butternut Squash",
-    "category": ["cucurbit", "starchy"],
-    "seed_per_sqft": 50,
+    "category": [
+      "cucurbit",
+      "starchy"
+    ],
     "yield_per_plant": 15,
     "calories_per_lb": 200,
     "days_to_maturity": 85,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 30, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 26, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 30,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 26,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 32, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 28, "last_harvest_week": 46 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 32,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 28,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 32, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 28, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 20,
+          "transplant_week": 20,
+          "first_harvest_week": 32,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 16,
+          "transplant_week": 16,
+          "first_harvest_week": 28,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 30, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 18,
+          "transplant_week": 18,
+          "first_harvest_week": 30,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 3
   },
   {
     "id": 12,
     "name": "Potato",
-    "category": ["starchy-root"],
-    "seed_per_sqft": 1,
+    "category": [
+      "starchy-root"
+    ],
     "yield_per_plant": 5,
     "calories_per_lb": 349,
     "days_to_maturity": 90,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 19, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 2, "transplant_week": 2, "first_harvest_week": 15, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 3,
+          "transplant_week": 6,
+          "first_harvest_week": 19,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 1,
+          "transplant_week": 2,
+          "first_harvest_week": 15,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 23, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 19, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 7,
+          "transplant_week": 10,
+          "first_harvest_week": 23,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 3,
+          "transplant_week": 6,
+          "first_harvest_week": 19,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 27, "last_harvest_week": 34 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 23, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 11,
+          "transplant_week": 14,
+          "first_harvest_week": 27,
+          "last_harvest_week": 34
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 7,
+          "transplant_week": 10,
+          "first_harvest_week": 23,
+          "last_harvest_week": 38
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 25, "last_harvest_week": 32 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 9,
+          "transplant_week": 12,
+          "first_harvest_week": 25,
+          "last_harvest_week": 32
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 1
   },
   {
     "id": 13,
     "name": "Sweet Potato",
-    "category": ["starchy-root"],
-    "seed_per_sqft": 9,
+    "category": [
+      "starchy-root"
+    ],
     "yield_per_plant": 3,
     "calories_per_lb": 390,
     "days_to_maturity": 100,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 32, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 28, "last_harvest_week": 50 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 32,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 28,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 34, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 46 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 34,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 5],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 34, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          5
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 34,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 32, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 32,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 1
   },
   {
     "id": 14,
     "name": "Onions",
-    "category": ["allium"],
-    "seed_per_sqft": 16,
+    "category": [
+      "allium"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 181,
     "days_to_maturity": 100,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 22, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 1, "transplant_week": 4, "first_harvest_week": 18, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 22,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 1,
+          "transplant_week": 4,
+          "first_harvest_week": 18,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 26, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 22, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 22,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 28, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 24, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 28,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 24,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 1
   },
   {
     "id": 15,
     "name": "Garlic",
-    "category": ["allium"],
-    "seed_per_sqft": 25,
+    "category": [
+      "allium"
+    ],
     "yield_per_plant": 0.2,
     "calories_per_lb": 680,
     "days_to_maturity": 240,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 8 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 8
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [5, 8],
-        "outdoor": { "seed_start_week": 40, "transplant_week": 40, "first_harvest_week": 24, "last_harvest_week": 28 },
-        "greenhouse_extended": { "seed_start_week": 38, "transplant_week": 38, "first_harvest_week": 22, "last_harvest_week": 30 }
+        "zone_range": [
+          5,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 37,
+          "transplant_week": 40,
+          "first_harvest_week": 24,
+          "last_harvest_week": 28
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 35,
+          "transplant_week": 38,
+          "first_harvest_week": 22,
+          "last_harvest_week": 30
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 42, "transplant_week": 42, "first_harvest_week": 24, "last_harvest_week": 28 },
-        "greenhouse_extended": { "seed_start_week": 40, "transplant_week": 40, "first_harvest_week": 22, "last_harvest_week": 30 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 39,
+          "transplant_week": 42,
+          "first_harvest_week": 24,
+          "last_harvest_week": 28
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 37,
+          "transplant_week": 40,
+          "first_harvest_week": 22,
+          "last_harvest_week": 30
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 40, "transplant_week": 40, "first_harvest_week": 24, "last_harvest_week": 28 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 37,
+          "transplant_week": 40,
+          "first_harvest_week": 24,
+          "last_harvest_week": 28
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 1
   },
   {
     "id": 16,
     "name": "Cabbage",
-    "category": ["cruciferous"],
-    "seed_per_sqft": 18,
+    "category": [
+      "cruciferous"
+    ],
     "yield_per_plant": 4,
     "calories_per_lb": 113,
     "days_to_maturity": 75,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 17,
     "name": "Peas",
-    "category": ["legume"],
-    "seed_per_sqft": 8,
+    "category": [
+      "legume"
+    ],
     "yield_per_plant": 1,
     "calories_per_lb": 354,
     "days_to_maturity": 60,
@@ -583,1211 +1468,3110 @@
     "succession_planting_weeks": 2,
     "multiple_windows": true,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
+        "zone_range": [
+          7,
+          9
+        ],
         "outdoor": [
-          { "name": "Spring", "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 14, "last_harvest_week": 18 },
-          { "name": "Fall", "seed_start_week": 32, "transplant_week": 32, "first_harvest_week": 40, "last_harvest_week": 44 }
+          {
+            "name": "Spring",
+            "seed_start_week": 5,
+            "transplant_week": 6,
+            "first_harvest_week": 14,
+            "last_harvest_week": 18
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 31,
+            "transplant_week": 32,
+            "first_harvest_week": 40,
+            "last_harvest_week": 44
+          }
         ],
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 2, "transplant_week": 2, "first_harvest_week": 10, "last_harvest_week": 18 },
-          { "name": "Fall", "seed_start_week": 30, "transplant_week": 30, "first_harvest_week": 38, "last_harvest_week": 46 }
+          {
+            "name": "Spring",
+            "seed_start_week": 1,
+            "transplant_week": 2,
+            "first_harvest_week": 10,
+            "last_harvest_week": 18
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 29,
+            "transplant_week": 30,
+            "first_harvest_week": 38,
+            "last_harvest_week": 46
+          }
         ]
       },
       {
-        "zone_range": [4, 6],
+        "zone_range": [
+          4,
+          6
+        ],
         "outdoor": [
-          { "name": "Spring", "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 20 },
-          { "name": "Fall", "seed_start_week": 34, "transplant_week": 34, "first_harvest_week": 42, "last_harvest_week": 46 }
+          {
+            "name": "Spring",
+            "seed_start_week": 7,
+            "transplant_week": 8,
+            "first_harvest_week": 16,
+            "last_harvest_week": 20
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 33,
+            "transplant_week": 34,
+            "first_harvest_week": 42,
+            "last_harvest_week": 46
+          }
         ],
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 4, "transplant_week": 4, "first_harvest_week": 12, "last_harvest_week": 20 },
-          { "name": "Fall", "seed_start_week": 32, "transplant_week": 32, "first_harvest_week": 40, "last_harvest_week": 48 }
+          {
+            "name": "Spring",
+            "seed_start_week": 3,
+            "transplant_week": 4,
+            "first_harvest_week": 12,
+            "last_harvest_week": 20
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 31,
+            "transplant_week": 32,
+            "first_harvest_week": 40,
+            "last_harvest_week": 48
+          }
         ]
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 24 },
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 11,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 24
+        },
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 20 },
-          { "name": "Fall", "seed_start_week": 36, "transplant_week": 36, "first_harvest_week": 44, "last_harvest_week": 48 }
+          {
+            "name": "Spring",
+            "seed_start_week": 7,
+            "transplant_week": 8,
+            "first_harvest_week": 16,
+            "last_harvest_week": 20
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 35,
+            "transplant_week": 36,
+            "first_harvest_week": 44,
+            "last_harvest_week": 48
+          }
         ]
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 26 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 13,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 26
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 8,
+    "greenhouse_priority": 2
   },
   {
     "id": 18,
     "name": "Eggplant",
-    "category": ["nightshade"],
-    "seed_per_sqft": 24,
+    "category": [
+      "nightshade"
+    ],
     "yield_per_plant": 5,
     "calories_per_lb": 113,
     "days_to_maturity": 75,
     "harvest_period_weeks": 10,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 50 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 46 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 5],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 20, "first_harvest_week": 30, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          5
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 20,
+          "first_harvest_week": 30,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 4
   },
   {
     "id": 19,
     "name": "Radish",
-    "category": ["root-vegetable"],
-    "seed_per_sqft": 1,
+    "category": [
+      "root-vegetable"
+    ],
     "yield_per_plant": 0.1,
     "calories_per_lb": 73,
     "days_to_maturity": 25,
     "harvest_period_weeks": 2,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 2, "max": 10 },
-      "greenhouse_zones": { "min": 1, "max": 1 },
+      "outdoor_zones": {
+        "min": 2,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 1,
+        "max": 1
+      },
       "impossible_zones": []
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 13, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 9, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 9,
+          "transplant_week": 10,
+          "first_harvest_week": 13,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 5,
+          "transplant_week": 6,
+          "first_harvest_week": 9,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 15, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 11, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 11,
+          "transplant_week": 12,
+          "first_harvest_week": 15,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 7,
+          "transplant_week": 8,
+          "first_harvest_week": 11,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 17, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 13, "last_harvest_week": 42 }
+        "zone_range": [
+          2,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 13,
+          "transplant_week": 14,
+          "first_harvest_week": 17,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 9,
+          "transplant_week": 10,
+          "first_harvest_week": 13,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [1, 1],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 21, "last_harvest_week": 34 }
+        "zone_range": [
+          1,
+          1
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 17,
+          "transplant_week": 18,
+          "first_harvest_week": 21,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 2
   },
   {
     "id": 20,
     "name": "Beets",
-    "category": ["root-vegetable"],
-    "seed_per_sqft": 9,
+    "category": [
+      "root-vegetable"
+    ],
     "yield_per_plant": 0.75,
     "calories_per_lb": 195,
     "days_to_maturity": 55,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 2, "max": 10 },
-      "greenhouse_zones": { "min": 1, "max": 1 },
+      "outdoor_zones": {
+        "min": 2,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 1,
+        "max": 1
+      },
       "impossible_zones": []
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 14, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 14,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 16,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 42 }
+        "zone_range": [
+          2,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [1, 1],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 34 }
+        "zone_range": [
+          1,
+          1
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   },
   {
     "id": 21,
     "name": "Hot Peppers",
-    "category": ["nightshade", "spicy"],
-    "seed_per_sqft": 24,
+    "category": [
+      "nightshade",
+      "spicy"
+    ],
     "yield_per_plant": 3,
     "calories_per_lb": 181,
     "days_to_maturity": 75,
     "harvest_period_weeks": 12,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 6, "max": 11 },
-      "greenhouse_zones": { "min": 4, "max": 5 },
-      "impossible_zones": [1, 2, 3]
+      "outdoor_zones": {
+        "min": 6,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 4,
+        "max": 5
+      },
+      "impossible_zones": [
+        1,
+        2,
+        3
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 50 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 46 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 5],
-        "greenhouse_only": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 38 }
+        "zone_range": [
+          4,
+          5
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 4
   },
   {
     "id": 22,
     "name": "Cantaloupe",
-    "category": ["cucurbit", "fruit"],
-    "seed_per_sqft": 24,
+    "category": [
+      "cucurbit",
+      "fruit"
+    ],
     "yield_per_plant": 8,
     "calories_per_lb": 154,
     "days_to_maturity": 80,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 11],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 29, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 25, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 29,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 25,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 31, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 27, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 31,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 27,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 29, "last_harvest_week": 36 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 29,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 4
   },
   {
     "id": 23,
     "name": "Watermelon",
-    "category": ["cucurbit", "fruit"],
-    "seed_per_sqft": 36,
+    "category": [
+      "cucurbit",
+      "fruit"
+    ],
     "yield_per_plant": 20,
     "calories_per_lb": 136,
     "days_to_maturity": 85,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 11],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 30, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 26, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 30,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 26,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 32, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 28, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 32,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 28,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 30, "last_harvest_week": 36 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 30,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 4
   },
   {
     "id": 24,
     "name": "Arugula",
-    "category": ["leafy-greens"],
-    "seed_per_sqft": 2,
+    "category": [
+      "leafy-greens"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 113,
     "days_to_maturity": 35,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 15, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 6, "first_harvest_week": 11, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 15,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 11,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 17, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 8, "first_harvest_week": 13, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 17,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 13,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 21, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 17, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 21,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 17,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 19, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 19,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 3
   },
   {
     "id": 25,
     "name": "Swiss Chard",
-    "category": ["leafy-greens"],
-    "seed_per_sqft": 9,
+    "category": [
+      "leafy-greens"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 86,
     "days_to_maturity": 50,
     "harvest_period_weeks": 16,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 19, "last_harvest_week": 48 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 15, "last_harvest_week": 52 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 19,
+          "last_harvest_week": 48
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 15,
+          "last_harvest_week": 52
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 50 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 25, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 46 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 25,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 38 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 3
   },
   {
     "id": 26,
     "name": "Collard Greens",
-    "category": ["leafy-greens", "cruciferous"],
-    "seed_per_sqft": 16,
+    "category": [
+      "leafy-greens",
+      "cruciferous"
+    ],
     "yield_per_plant": 2.5,
     "calories_per_lb": 145,
     "days_to_maturity": 65,
     "harvest_period_weeks": 12,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 23, "last_harvest_week": 48 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 19, "last_harvest_week": 52 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 23,
+          "last_harvest_week": 48
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 19,
+          "last_harvest_week": 52
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 25, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 21, "last_harvest_week": 50 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 25,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 21,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 27, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 23, "last_harvest_week": 46 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 27,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 23,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 25, "last_harvest_week": 38 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 25,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 27,
     "name": "Turnips",
-    "category": ["root-vegetable", "cruciferous"],
-    "seed_per_sqft": 9,
+    "category": [
+      "root-vegetable",
+      "cruciferous"
+    ],
     "yield_per_plant": 0.8,
     "calories_per_lb": 127,
     "days_to_maturity": 50,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 2, "max": 10 },
-      "greenhouse_zones": { "min": 1, "max": 1 },
+      "outdoor_zones": {
+        "min": 2,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 1,
+        "max": 1
+      },
       "impossible_zones": []
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 13, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 9,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 5,
+          "transplant_week": 6,
+          "first_harvest_week": 13,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 19, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 15, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 11,
+          "transplant_week": 12,
+          "first_harvest_week": 19,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 7,
+          "transplant_week": 8,
+          "first_harvest_week": 15,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [2, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 40 }
+        "zone_range": [
+          2,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 13,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 9,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [1, 1],
-        "greenhouse_only": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 32 }
+        "zone_range": [
+          1,
+          1
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 15,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 32
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   },
   {
     "id": 28,
     "name": "Parsnips",
-    "category": ["root-vegetable"],
-    "seed_per_sqft": 16,
+    "category": [
+      "root-vegetable"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 340,
     "days_to_maturity": 120,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 25, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 4, "first_harvest_week": 21, "last_harvest_week": 44 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 25,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 1,
+          "transplant_week": 4,
+          "first_harvest_week": 21,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 27, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 23, "last_harvest_week": 42 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 27,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 2,
+          "transplant_week": 6,
+          "first_harvest_week": 23,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 29, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 8, "first_harvest_week": 25, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 29,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 25,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 31, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 31,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 2
   },
   {
     "id": 29,
     "name": "Brussels Sprouts",
-    "category": ["cruciferous"],
-    "seed_per_sqft": 18,
+    "category": [
+      "cruciferous"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 195,
     "days_to_maturity": 90,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 31, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 27, "last_harvest_week": 50 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 31,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 27,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 20, "first_harvest_week": 33, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 48 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 20,
+          "first_harvest_week": 33,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 22, "first_harvest_week": 35, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 31, "last_harvest_week": 46 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 22,
+          "first_harvest_week": 35,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 31,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 24, "first_harvest_week": 37, "last_harvest_week": 42 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 18,
+          "transplant_week": 24,
+          "first_harvest_week": 37,
+          "last_harvest_week": 42
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 30,
     "name": "Cauliflower",
-    "category": ["cruciferous"],
-    "seed_per_sqft": 18,
+    "category": [
+      "cruciferous"
+    ],
     "yield_per_plant": 2,
     "calories_per_lb": 113,
     "days_to_maturity": 65,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 23, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 19, "last_harvest_week": 48 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 23,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 19,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 25, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 21, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 25,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 21,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 27, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 23, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 27,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 23,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 25, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 25,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 31,
     "name": "Edamame",
-    "category": ["legume"],
-    "seed_per_sqft": 9,
+    "category": [
+      "legume"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 531,
     "days_to_maturity": 75,
     "harvest_period_weeks": 3,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 4, "max": 9 },
-      "greenhouse_zones": { "min": 3, "max": 3 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 4,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 3
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 40 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 38 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 38
+        }
       },
       {
-        "zone_range": [3, 3],
-        "greenhouse_only": { "seed_start_week": 16, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 34 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   },
   {
     "id": 32,
     "name": "Leeks",
-    "category": ["allium"],
-    "seed_per_sqft": 36,
+    "category": [
+      "allium"
+    ],
     "yield_per_plant": 0.4,
     "calories_per_lb": 272,
     "days_to_maturity": 120,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 27, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 1, "transplant_week": 6, "first_harvest_week": 23, "last_harvest_week": 48 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 27,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 1,
+          "transplant_week": 6,
+          "first_harvest_week": 23,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 29, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 2, "transplant_week": 8, "first_harvest_week": 25, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 29,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 2,
+          "transplant_week": 8,
+          "first_harvest_week": 25,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 31, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 27, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 31,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 27,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 33, "last_harvest_week": 38 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 33,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 1
   },
   {
     "id": 33,
     "name": "Shallots",
-    "category": ["allium"],
-    "seed_per_sqft": 25,
+    "category": [
+      "allium"
+    ],
     "yield_per_plant": 0.3,
     "calories_per_lb": 327,
     "days_to_maturity": 90,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 23, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 2, "transplant_week": 6, "first_harvest_week": 19, "last_harvest_week": 42 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 23,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 2,
+          "transplant_week": 6,
+          "first_harvest_week": 19,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 25, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 21, "last_harvest_week": 40 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 25,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 21,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 27, "last_harvest_week": 34 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 23, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 27,
+          "last_harvest_week": 34
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 23,
+          "last_harvest_week": 38
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 1
   },
   {
     "id": 34,
     "name": "Green Onions",
-    "category": ["allium"],
-    "seed_per_sqft": 10,
+    "category": [
+      "allium"
+    ],
     "yield_per_plant": 0.1,
     "calories_per_lb": 145,
     "days_to_maturity": 60,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 6, "first_harvest_week": 14, "last_harvest_week": 48 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 14,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 16,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 1
   },
   {
     "id": 35,
     "name": "Basil",
-    "category": ["herb"],
-    "seed_per_sqft": 6,
+    "category": [
+      "herb"
+    ],
     "yield_per_plant": 0.3,
     "calories_per_lb": 104,
     "days_to_maturity": 60,
     "harvest_period_weeks": 12,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 11],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 48 }
+        "zone_range": [
+          8,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 36 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 4
   },
   {
     "id": 36,
     "name": "Cilantro",
-    "category": ["herb"],
-    "seed_per_sqft": 6,
+    "category": [
+      "herb"
+    ],
     "yield_per_plant": 0.2,
     "calories_per_lb": 104,
     "days_to_maturity": 50,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 6, "first_harvest_week": 13, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 13,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 19, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 8, "first_harvest_week": 15, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 19,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 15,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 2
   },
   {
     "id": 37,
     "name": "Parsley",
-    "category": ["herb"],
-    "seed_per_sqft": 8,
+    "category": [
+      "herb"
+    ],
     "yield_per_plant": 0.4,
     "calories_per_lb": 163,
     "days_to_maturity": 70,
     "harvest_period_weeks": 16,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 21, "last_harvest_week": 48 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 17, "last_harvest_week": 52 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 21,
+          "last_harvest_week": 48
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 17,
+          "last_harvest_week": 52
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 23, "last_harvest_week": 46 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 19, "last_harvest_week": 50 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 23,
+          "last_harvest_week": 46
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 19,
+          "last_harvest_week": 50
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 25, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 21, "last_harvest_week": 46 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 25,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 21,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 27, "last_harvest_week": 38 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 27,
+          "last_harvest_week": 38
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 2
   },
   {
     "id": 38,
     "name": "Corn",
-    "category": ["grain", "starchy"],
-    "seed_per_sqft": 3,
+    "category": [
+      "grain",
+      "starchy"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 390,
     "days_to_maturity": 75,
     "harvest_period_weeks": 2,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 4, "max": 10 },
-      "greenhouse_zones": { "min": 3, "max": 3 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 4,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 3
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 44 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [4, 4],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 30, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 40 }
+        "zone_range": [
+          4,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 30,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [3, 3],
-        "greenhouse_only": { "seed_start_week": 16, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 34 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 2
   },
   {
     "id": 39,
     "name": "Pumpkin",
-    "category": ["cucurbit", "starchy"],
-    "seed_per_sqft": 72,
+    "category": [
+      "cucurbit",
+      "starchy"
+    ],
     "yield_per_plant": 25,
     "calories_per_lb": 118,
     "days_to_maturity": 100,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 20, "first_harvest_week": 34, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 20,
+          "first_harvest_week": 34,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 34, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 34,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 34, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 30, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 20,
+          "transplant_week": 20,
+          "first_harvest_week": 34,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 16,
+          "transplant_week": 16,
+          "first_harvest_week": 30,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 32, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 18,
+          "transplant_week": 18,
+          "first_harvest_week": 32,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 3
   },
   {
     "id": 40,
     "name": "Acorn Squash",
-    "category": ["cucurbit", "starchy"],
-    "seed_per_sqft": 48,
+    "category": [
+      "cucurbit",
+      "starchy"
+    ],
     "yield_per_plant": 12,
     "calories_per_lb": 195,
     "days_to_maturity": 80,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 29, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 25, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 29,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 25,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 31, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 27, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 31,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 27,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 31, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 27, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 20,
+          "transplant_week": 20,
+          "first_harvest_week": 31,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 16,
+          "transplant_week": 16,
+          "first_harvest_week": 27,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 29, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 18,
+          "transplant_week": 18,
+          "first_harvest_week": 29,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 3
   },
   {
     "id": 41,
     "name": "Asparagus",
-    "category": ["perennial"],
-    "seed_per_sqft": 4,
+    "category": [
+      "perennial"
+    ],
     "yield_per_plant": 0.5,
     "calories_per_lb": 91,
     "days_to_maturity": 730,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 14, "last_harvest_week": 22 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 10, "last_harvest_week": 26 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 14,
+          "last_harvest_week": 22
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 10,
+          "last_harvest_week": 26
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 16, "last_harvest_week": 24 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 12, "last_harvest_week": 28 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 16,
+          "last_harvest_week": 24
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 12,
+          "last_harvest_week": 28
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 18, "last_harvest_week": 26 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 14, "last_harvest_week": 30 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 18,
+          "last_harvest_week": 26
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 14,
+          "last_harvest_week": 30
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 20, "last_harvest_week": 28 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 20,
+          "last_harvest_week": 28
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 1
   },
   {
     "id": 42,
     "name": "Strawberries",
-    "category": ["fruit", "perennial"],
-    "seed_per_sqft": 4,
+    "category": [
+      "fruit",
+      "perennial"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 145,
     "days_to_maturity": 60,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 26 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 30 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 26
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 16,
+          "last_harvest_week": 30
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 28 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 32 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 28
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 32
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 30 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 34 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 30
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 34
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 32 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 32
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 1
   },
   {
     "id": 43,
     "name": "Mustard Greens",
-    "category": ["leafy-greens", "cruciferous"],
-    "seed_per_sqft": 6,
+    "category": [
+      "leafy-greens",
+      "cruciferous"
+    ],
     "yield_per_plant": 1,
     "calories_per_lb": 122,
     "days_to_maturity": 40,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 10, "first_harvest_week": 16, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 6, "first_harvest_week": 12, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 16,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 6,
+          "first_harvest_week": 12,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 18, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 8, "first_harvest_week": 14, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 18,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 8,
+          "first_harvest_week": 14,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 22, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 18, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 22,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 18,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 14, "first_harvest_week": 20, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 20,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 3
   },
   {
     "id": 44,
     "name": "Bok Choy",
-    "category": ["leafy-greens", "cruciferous"],
-    "seed_per_sqft": 9,
+    "category": [
+      "leafy-greens",
+      "cruciferous"
+    ],
     "yield_per_plant": 1.5,
     "calories_per_lb": 59,
     "days_to_maturity": 50,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 19, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 15, "last_harvest_week": 46 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 19,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 15,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 17, "last_harvest_week": 44 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 17,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 25, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 21, "last_harvest_week": 40 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 25,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 21,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 23, "last_harvest_week": 34 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 23,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 3
   },
   {
     "id": 45,
     "name": "Kohlrabi",
-    "category": ["cruciferous"],
-    "seed_per_sqft": 9,
+    "category": [
+      "cruciferous"
+    ],
     "yield_per_plant": 1,
     "calories_per_lb": 122,
     "days_to_maturity": 55,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 2,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 10],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 12, "first_harvest_week": 20, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 8, "first_harvest_week": 16, "last_harvest_week": 44 }
+        "zone_range": [
+          7,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 12,
+          "first_harvest_week": 20,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 8,
+          "first_harvest_week": 16,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 10, "first_harvest_week": 18, "last_harvest_week": 42 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 10,
+          "first_harvest_week": 18,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 26, "last_harvest_week": 34 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 22, "last_harvest_week": 38 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 26,
+          "last_harvest_week": 34
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 22,
+          "last_harvest_week": 38
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 16, "first_harvest_week": 24, "last_harvest_week": 32 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 12,
+          "transplant_week": 16,
+          "first_harvest_week": 24,
+          "last_harvest_week": 32
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 4,
+    "greenhouse_priority": 1
   },
   {
     "id": 46,
     "name": "Rutabaga",
-    "category": ["root-vegetable", "cruciferous"],
-    "seed_per_sqft": 9,
+    "category": [
+      "root-vegetable",
+      "cruciferous"
+    ],
     "yield_per_plant": 1.2,
     "calories_per_lb": 168,
     "days_to_maturity": 90,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 2, "max": 9 },
-      "greenhouse_zones": { "min": 1, "max": 1 },
+      "outdoor_zones": {
+        "min": 2,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 1,
+        "max": 1
+      },
       "impossible_zones": []
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
-        "outdoor": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 25, "last_harvest_week": 44 }
+        "zone_range": [
+          7,
+          9
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 25,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [4, 6],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 31, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 14, "first_harvest_week": 27, "last_harvest_week": 46 }
+        "zone_range": [
+          4,
+          6
+        ],
+        "outdoor": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 31,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 12,
+          "transplant_week": 14,
+          "first_harvest_week": 27,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [2, 3],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 33, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 44 }
+        "zone_range": [
+          2,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 33,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [1, 1],
-        "greenhouse_only": { "seed_start_week": 22, "transplant_week": 22, "first_harvest_week": 35, "last_harvest_week": 42 }
+        "zone_range": [
+          1,
+          1
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 20,
+          "transplant_week": 22,
+          "first_harvest_week": 35,
+          "last_harvest_week": 42
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 16,
+    "greenhouse_priority": 2
   },
   {
     "id": 47,
     "name": "Tomatillos",
-    "category": ["nightshade"],
-    "seed_per_sqft": 36,
+    "category": [
+      "nightshade"
+    ],
     "yield_per_plant": 4,
     "calories_per_lb": 145,
     "days_to_maturity": 75,
     "harvest_period_weeks": 8,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 5, "max": 11 },
-      "greenhouse_zones": { "min": 3, "max": 4 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 5,
+        "max": 11
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 4
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [9, 11],
-        "outdoor": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 44 },
-        "greenhouse_extended": { "seed_start_week": 4, "transplant_week": 10, "first_harvest_week": 20, "last_harvest_week": 48 }
+        "zone_range": [
+          9,
+          11
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 44
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 4,
+          "transplant_week": 10,
+          "first_harvest_week": 20,
+          "last_harvest_week": 48
+        }
       },
       {
-        "zone_range": [6, 8],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 6, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 44 }
+        "zone_range": [
+          6,
+          8
+        ],
+        "outdoor": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 6,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [5, 5],
-        "outdoor": { "seed_start_week": 12, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 8, "transplant_week": 14, "first_harvest_week": 24, "last_harvest_week": 42 }
+        "zone_range": [
+          5,
+          5
+        ],
+        "outdoor": {
+          "seed_start_week": 12,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 8,
+          "transplant_week": 14,
+          "first_harvest_week": 24,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [3, 4],
-        "greenhouse_only": { "seed_start_week": 10, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 36 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 1,
+    "greenhouse_priority": 4
   },
   {
     "id": 48,
     "name": "Winter Squash",
-    "category": ["cucurbit", "starchy"],
-    "seed_per_sqft": 54,
+    "category": [
+      "cucurbit",
+      "starchy"
+    ],
     "yield_per_plant": 18,
     "calories_per_lb": 177,
     "days_to_maturity": 95,
     "harvest_period_weeks": 4,
     "succession_planting_weeks": 0,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 10 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 18, "first_harvest_week": 31, "last_harvest_week": 42 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 14, "first_harvest_week": 27, "last_harvest_week": 46 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 18,
+          "first_harvest_week": 31,
+          "last_harvest_week": 42
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 14,
+          "first_harvest_week": 27,
+          "last_harvest_week": 46
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 33, "last_harvest_week": 40 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 44 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 33,
+          "last_harvest_week": 40
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 44
+        }
       },
       {
-        "zone_range": [3, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 33, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 29, "last_harvest_week": 42 }
+        "zone_range": [
+          3,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 20,
+          "transplant_week": 20,
+          "first_harvest_week": 33,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 16,
+          "transplant_week": 16,
+          "first_harvest_week": 29,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 31, "last_harvest_week": 36 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 18,
+          "transplant_week": 18,
+          "first_harvest_week": 31,
+          "last_harvest_week": 36
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 0.5,
+    "greenhouse_priority": 3
   },
   {
     "id": 49,
     "name": "Lima Beans",
-    "category": ["legume"],
-    "seed_per_sqft": 12,
+    "category": [
+      "legume"
+    ],
     "yield_per_plant": 0.8,
     "calories_per_lb": 481,
     "days_to_maturity": 75,
     "harvest_period_weeks": 6,
     "succession_planting_weeks": 3,
     "growing_conditions": {
-      "outdoor_zones": { "min": 4, "max": 10 },
-      "greenhouse_zones": { "min": 3, "max": 3 },
-      "impossible_zones": [1, 2]
+      "outdoor_zones": {
+        "min": 4,
+        "max": 10
+      },
+      "greenhouse_zones": {
+        "min": 3,
+        "max": 3
+      },
+      "impossible_zones": [
+        1,
+        2
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [8, 10],
-        "outdoor": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 10, "transplant_week": 12, "first_harvest_week": 22, "last_harvest_week": 42 }
+        "zone_range": [
+          8,
+          10
+        ],
+        "outdoor": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 22,
+          "last_harvest_week": 42
+        }
       },
       {
-        "zone_range": [5, 7],
-        "outdoor": { "seed_start_week": 18, "transplant_week": 20, "first_harvest_week": 30, "last_harvest_week": 38 },
-        "greenhouse_extended": { "seed_start_week": 14, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 40 }
+        "zone_range": [
+          5,
+          7
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 30,
+          "last_harvest_week": 38
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 40
+        }
       },
       {
-        "zone_range": [4, 4],
-        "outdoor": { "seed_start_week": 20, "transplant_week": 20, "first_harvest_week": 30, "last_harvest_week": 36 },
-        "greenhouse_extended": { "seed_start_week": 16, "transplant_week": 16, "first_harvest_week": 26, "last_harvest_week": 38 }
+        "zone_range": [
+          4,
+          4
+        ],
+        "outdoor": {
+          "seed_start_week": 18,
+          "transplant_week": 20,
+          "first_harvest_week": 30,
+          "last_harvest_week": 36
+        },
+        "greenhouse_extended": {
+          "seed_start_week": 14,
+          "transplant_week": 16,
+          "first_harvest_week": 26,
+          "last_harvest_week": 38
+        }
       },
       {
-        "zone_range": [3, 3],
-        "greenhouse_only": { "seed_start_week": 18, "transplant_week": 18, "first_harvest_week": 28, "last_harvest_week": 34 }
+        "zone_range": [
+          3,
+          3
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 16,
+          "transplant_week": 18,
+          "first_harvest_week": 28,
+          "last_harvest_week": 34
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   },
   {
     "id": 50,
     "name": "Fava Beans",
-    "category": ["legume"],
-    "seed_per_sqft": 9,
+    "category": [
+      "legume"
+    ],
     "yield_per_plant": 1,
     "calories_per_lb": 481,
     "days_to_maturity": 80,
@@ -1795,45 +4579,137 @@
     "succession_planting_weeks": 0,
     "multiple_windows": true,
     "growing_conditions": {
-      "outdoor_zones": { "min": 3, "max": 9 },
-      "greenhouse_zones": { "min": 2, "max": 2 },
-      "impossible_zones": [1]
+      "outdoor_zones": {
+        "min": 3,
+        "max": 9
+      },
+      "greenhouse_zones": {
+        "min": 2,
+        "max": 2
+      },
+      "impossible_zones": [
+        1
+      ]
     },
     "zone_adjusted_schedules": [
       {
-        "zone_range": [7, 9],
+        "zone_range": [
+          7,
+          9
+        ],
         "outdoor": [
-          { "name": "Spring", "seed_start_week": 4, "transplant_week": 4, "first_harvest_week": 15, "last_harvest_week": 19 },
-          { "name": "Fall", "seed_start_week": 30, "transplant_week": 30, "first_harvest_week": 41, "last_harvest_week": 45 }
+          {
+            "name": "Spring",
+            "seed_start_week": 2,
+            "transplant_week": 4,
+            "first_harvest_week": 15,
+            "last_harvest_week": 19
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 28,
+            "transplant_week": 30,
+            "first_harvest_week": 41,
+            "last_harvest_week": 45
+          }
         ],
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 1, "transplant_week": 1, "first_harvest_week": 12, "last_harvest_week": 19 },
-          { "name": "Fall", "seed_start_week": 28, "transplant_week": 28, "first_harvest_week": 39, "last_harvest_week": 48 }
+          {
+            "name": "Spring",
+            "seed_start_week": 1,
+            "transplant_week": 1,
+            "first_harvest_week": 12,
+            "last_harvest_week": 19
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 26,
+            "transplant_week": 28,
+            "first_harvest_week": 39,
+            "last_harvest_week": 48
+          }
         ]
       },
       {
-        "zone_range": [4, 6],
+        "zone_range": [
+          4,
+          6
+        ],
         "outdoor": [
-          { "name": "Spring", "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 17, "last_harvest_week": 21 },
-          { "name": "Fall", "seed_start_week": 32, "transplant_week": 32, "first_harvest_week": 43, "last_harvest_week": 47 }
+          {
+            "name": "Spring",
+            "seed_start_week": 4,
+            "transplant_week": 6,
+            "first_harvest_week": 17,
+            "last_harvest_week": 21
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 30,
+            "transplant_week": 32,
+            "first_harvest_week": 43,
+            "last_harvest_week": 47
+          }
         ],
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 2, "transplant_week": 2, "first_harvest_week": 13, "last_harvest_week": 21 },
-          { "name": "Fall", "seed_start_week": 30, "transplant_week": 30, "first_harvest_week": 41, "last_harvest_week": 50 }
+          {
+            "name": "Spring",
+            "seed_start_week": 1,
+            "transplant_week": 2,
+            "first_harvest_week": 13,
+            "last_harvest_week": 21
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 28,
+            "transplant_week": 30,
+            "first_harvest_week": 41,
+            "last_harvest_week": 50
+          }
         ]
       },
       {
-        "zone_range": [3, 3],
-        "outdoor": { "seed_start_week": 10, "transplant_week": 10, "first_harvest_week": 21, "last_harvest_week": 25 },
+        "zone_range": [
+          3,
+          3
+        ],
+        "outdoor": {
+          "seed_start_week": 8,
+          "transplant_week": 10,
+          "first_harvest_week": 21,
+          "last_harvest_week": 25
+        },
         "greenhouse_extended": [
-          { "name": "Spring", "seed_start_week": 6, "transplant_week": 6, "first_harvest_week": 17, "last_harvest_week": 25 },
-          { "name": "Fall", "seed_start_week": 34, "transplant_week": 34, "first_harvest_week": 45, "last_harvest_week": 49 }
+          {
+            "name": "Spring",
+            "seed_start_week": 4,
+            "transplant_week": 6,
+            "first_harvest_week": 17,
+            "last_harvest_week": 25
+          },
+          {
+            "name": "Fall",
+            "seed_start_week": 32,
+            "transplant_week": 34,
+            "first_harvest_week": 45,
+            "last_harvest_week": 49
+          }
         ]
       },
       {
-        "zone_range": [2, 2],
-        "greenhouse_only": { "seed_start_week": 12, "transplant_week": 12, "first_harvest_week": 23, "last_harvest_week": 27 }
+        "zone_range": [
+          2,
+          2
+        ],
+        "greenhouse_only": {
+          "seed_start_week": 10,
+          "transplant_week": 12,
+          "first_harvest_week": 23,
+          "last_harvest_week": 27
+        }
       }
-    ]
+    ],
+    "plants_per_sqft": 9,
+    "greenhouse_priority": 2
   }
 ]

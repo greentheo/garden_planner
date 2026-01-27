@@ -23,7 +23,7 @@ document.getElementById('garden-form').addEventListener('submit', e => {
   const household = parseInt(document.getElementById('household').value, 10);
   const gardenSizeInput = document.getElementById('garden-size').value;
   const gardenSize = gardenSizeInput ? parseFloat(gardenSizeInput) : null;
-  const useGreenhouseExtension = document.getElementById('greenhouse-available').checked;
+  const greenhouseSqft = parseInt(document.getElementById('greenhouse-sqft').value, 10) || 0;
   const foodSupplementationPercent = parseInt(document.getElementById('food-supplementation').value, 10);
 
   try {
@@ -34,7 +34,7 @@ document.getElementById('garden-form').addEventListener('submit', e => {
       gardenSize,
       plants,
       recipes,
-      useGreenhouseExtension,
+      greenhouseSqft,
       foodSupplementationPercent
     });
     showPlan(plan);

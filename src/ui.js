@@ -39,52 +39,60 @@ export function showPlan(plan) {
   html += '<tr>';
   html += '<th>Crop</th>';
   html += '<th>Category</th>';
-  html += '<th>Growing Location</th>';
-  html += '<th>Calories Needed</th>';
-  html += '<th>Calories per Pound</th>';
-  html += '<th>Yield (lbs) per Plant</th>';
-  html += '<th>Plants Needed</th>';
-  html += '<th>Total Yield (lbs)</th>';
+  html += '<th>🏠 Greenhouse<br>Plants</th>';
+  html += '<th>🏠 Greenhouse<br>Space (sqft)</th>';
+  html += '<th>🌞 Outdoor<br>Plants</th>';
+  html += '<th>🌞 Outdoor<br>Space (sqft)</th>';
+  html += '<th>Total<br>Plants</th>';
+  html += '<th>Total<br>Space (sqft)</th>';
+  html += '<th>Calories<br>Needed</th>';
+  html += '<th>Total Yield<br>(lbs)</th>';
   html += '</tr>';
 
   plan.items.forEach(it => {
-    // Determine row styling based on location
-    let rowStyle = '';
-    let locationDisplay = '';
+    const greenhousePlants = it.greenhousePlants || 0;
+    const outdoorPlants = it.outdoorPlants || it.count;
+    const greenhouseSqft = it.greenhouseSqft || 0;
+    const outdoorSqft = it.outdoorSqft || it.sqft;
 
-    if (it.location === "outdoor") {
-      rowStyle = 'background-color: #e8f5e9;'; // light green
-      locationDisplay = '🌞 Outdoor';
-    } else if (it.location === "greenhouse-extended") {
-      rowStyle = 'background-color: #fff9c4;'; // light yellow
-      locationDisplay = '🏠⭐ Greenhouse Extended';
-    } else if (it.location === "greenhouse") {
-      rowStyle = 'background-color: #fff3e0;'; // light orange
-      locationDisplay = '🏠 Greenhouse';
+    // Determine row styling based on greenhouse allocation
+    let rowStyle = '';
+    if (greenhousePlants > 0 && outdoorPlants > 0) {
+      rowStyle = 'background-color: #fffbf0;'; // light yellow - split
+    } else if (greenhousePlants > 0) {
+      rowStyle = 'background-color: #fff3e0;'; // light orange - all greenhouse
     } else {
-      rowStyle = 'background-color: #ffebee; text-decoration: line-through;'; // light red
-      locationDisplay = '❌ Not Viable';
+      rowStyle = 'background-color: #e8f5e9;'; // light green - all outdoor
     }
 
     html += `<tr style="${rowStyle}">`;
     html += `<td><strong>${it.plant.name}</strong></td>`;
     html += `<td>${it.category}</td>`;
-    html += `<td>${locationDisplay}</td>`;
-    html += `<td>${it.plantCaloriesNeeded.toFixed(0)}</td>`;
-    html += `<td>${it.plant.calories_per_lb}</td>`;
-    html += `<td>${it.plant.yield_per_plant.toFixed(1)}</td>`;
+    html += `<td>${greenhousePlants}</td>`;
+    html += `<td>${greenhouseSqft.toFixed(1)}</td>`;
+    html += `<td>${outdoorPlants}</td>`;
+    html += `<td>${outdoorSqft.toFixed(1)}</td>`;
     html += `<td>${it.count}</td>`;
+    html += `<td>${it.sqft.toFixed(1)}</td>`;
+    html += `<td>${it.plantCaloriesNeeded.toFixed(0)}</td>`;
     html += `<td>${it.totalPounds.toFixed(1)}</td>`;
     html += `</tr>`;
   });
 
+  // Calculate totals for greenhouse and outdoor
+  const totalGreenhousePlants = plan.items.reduce((sum, it) => sum + (it.greenhousePlants || 0), 0);
+  const totalOutdoorPlants = plan.items.reduce((sum, it) => sum + (it.outdoorPlants || it.count), 0);
+
   // Add summary row
   html += `<tr style="background-color: #e3f2fd; font-weight: bold; border-top: 3px solid #333;">`;
-  html += `<td colspan="3">TOTALS</td>`;
-  html += `<td>${plan.summary.totalCaloriesProduced.toFixed(0)} / ${plan.summary.totalCaloriesNeeded.toFixed(0)} (${plan.summary.percentFilled}%)</td>`;
-  html += `<td>${plan.summary.avgCaloriesPerLb.toFixed(0)}</td>`;
-  html += `<td>${(plan.summary.totalYield / plan.summary.totalPlants).toFixed(1)}</td>`;
+  html += `<td colspan="2">TOTALS</td>`;
+  html += `<td>${totalGreenhousePlants}</td>`;
+  html += `<td>${plan.greenhouseSqftUsed.toFixed(1)}</td>`;
+  html += `<td>${totalOutdoorPlants}</td>`;
+  html += `<td>${plan.outdoorSqFt.toFixed(1)}</td>`;
   html += `<td>${plan.summary.totalPlants}</td>`;
+  html += `<td>${plan.gardenSize.toFixed(1)}</td>`;
+  html += `<td>${plan.summary.totalCaloriesProduced.toFixed(0)} / ${plan.summary.totalCaloriesNeeded.toFixed(0)} (${plan.summary.percentFilled}%)</td>`;
   html += `<td>${plan.summary.totalYield.toFixed(1)}</td>`;
   html += `</tr>`;
 
@@ -115,14 +123,19 @@ export function showPlan(plan) {
   html += `<p style="color: #2196f3; font-weight: bold; margin-bottom: 15px;">🎯 Goal: ${suppPercent}% of annual food needs (${suppLabel})</p>`;
 
   // Add greenhouse status message
-  const greenhouseStatus = plan.useGreenhouseExtension
-    ? '✓ Greenhouse available for season extension'
-    : '✗ No greenhouse - outdoor growing only';
-  const statusColor = plan.useGreenhouseExtension ? '#4caf50' : '#ff9800';
-  html += `<p style="color: ${statusColor}; font-weight: bold; margin-bottom: 15px;">${greenhouseStatus}</p>`;
+  if (plan.greenhouseSqftAvailable > 0) {
+    const utilization = plan.greenhouseAllocation.utilization.toFixed(1);
+    const utilized = plan.greenhouseSqftUsed.toFixed(1);
+    const available = plan.greenhouseSqftAvailable.toFixed(1);
+    html += `<p style="color: #4caf50; font-weight: bold; margin-bottom: 15px;">🏠 Greenhouse: ${utilized} sq ft used / ${available} sq ft available (${utilization}% utilization)</p>`;
+  } else {
+    html += `<p style="color: #ff9800; font-weight: bold; margin-bottom: 15px;">✗ No greenhouse - outdoor growing only</p>`;
+  }
 
   html += `<p><strong>🌞 Outdoor Space:</strong> ${plan.outdoorSqFt.toFixed(1)} sq ft</p>`;
-  html += `<p><strong>🏠 Greenhouse Space:</strong> ${plan.greenhouseSqFt.toFixed(1)} sq ft</p>`;
+  if (plan.greenhouseSqftAvailable > 0) {
+    html += `<p><strong>🏠 Greenhouse Space:</strong> ${plan.greenhouseSqftUsed.toFixed(1)} sq ft (${plan.greenhouseSqftAvailable.toFixed(1)} sq ft available)</p>`;
+  }
   html += `<p><strong>Total Space:</strong> ${plan.gardenSize.toFixed(1)} sq ft</p>`;
   html += '</div>';
 
@@ -247,77 +260,81 @@ function renderGardenPlot(plan) {
     '#b2bec3', '#fab1a0', '#ff7675', '#55efc4', '#81ecec'
   ];
 
-  // Separate outdoor and greenhouse plants
-  const outdoorItems = plan.items.filter(it => it.location === "outdoor");
-  const greenhouseItems = plan.items.filter(it => it.location !== "outdoor");
-
   let html = '';
 
-  // Outdoor section
-  if (outdoorItems.length > 0) {
+  // Outdoor section - show plants with outdoorPlants > 0
+  const outdoorItems = plan.items.filter(it => (it.outdoorPlants || it.count) > 0);
+  const outdoorTotal = plan.outdoorSqFt;
+
+  if (outdoorTotal > 0) {
     html += '<h4 style="margin-top: 10px;">🌞 Outdoor Garden</h4>';
     html += '<div style="display: flex; flex-wrap: wrap; border: 2px solid #4caf50; max-width: 800px;">';
 
-    const outdoorTotal = outdoorItems.reduce((sum, it) =>
-      sum + (it.plant.seed_per_sqft * it.count), 0);
-
     outdoorItems.forEach((it, idx) => {
-      const sqft = it.plant.seed_per_sqft * it.count;
-      const percentage = (sqft / outdoorTotal * 100);
-      const color = colors[idx % colors.length];
+      const outdoorPlants = it.outdoorPlants || it.count;
+      const outdoorSqft = it.outdoorSqft || it.sqft;
 
-      html += `<div style="
-        background-color: ${color};
-        padding: 15px;
-        margin: 2px;
-        flex-basis: calc(${percentage}% - 4px);
-        min-height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        border: 1px solid #333;
-      ">
-        <strong>${it.plant.name}</strong><br>
-        <span style="font-size: 0.9em;">${it.count} plants</span><br>
-        <span style="font-size: 0.85em;">${sqft.toFixed(1)} sq ft</span>
-      </div>`;
+      if (outdoorSqft > 0) {
+        const percentage = (outdoorSqft / outdoorTotal * 100);
+        const color = colors[idx % colors.length];
+
+        html += `<div style="
+          background-color: ${color};
+          padding: 15px;
+          margin: 2px;
+          flex-basis: calc(${percentage}% - 4px);
+          min-height: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          border: 1px solid #333;
+        ">
+          <strong>${it.plant.name}</strong><br>
+          <span style="font-size: 0.9em;">${outdoorPlants} plants</span><br>
+          <span style="font-size: 0.85em;">${outdoorSqft.toFixed(1)} sq ft</span>
+        </div>`;
+      }
     });
 
     html += '</div>';
   }
 
-  // Greenhouse section
-  if (greenhouseItems.length > 0) {
+  // Greenhouse section - show plants with greenhousePlants > 0
+  const greenhouseItems = plan.items.filter(it => (it.greenhousePlants || 0) > 0);
+  const greenhouseTotal = plan.greenhouseSqftUsed;
+
+  if (greenhouseTotal > 0) {
     html += '<h4 style="margin-top: 20px;">🏠 Greenhouse</h4>';
     html += '<div style="display: flex; flex-wrap: wrap; border: 2px solid #ff9800; max-width: 800px;">';
 
-    const greenhouseTotal = greenhouseItems.reduce((sum, it) =>
-      sum + (it.plant.seed_per_sqft * it.count), 0);
-
     greenhouseItems.forEach((it, idx) => {
-      const sqft = it.plant.seed_per_sqft * it.count;
-      const percentage = (sqft / greenhouseTotal * 100);
-      const color = colors[(idx + outdoorItems.length) % colors.length];
+      const greenhousePlants = it.greenhousePlants || 0;
+      const greenhouseSqft = it.greenhouseSqft || 0;
 
-      html += `<div style="
-        background-color: ${color};
-        padding: 15px;
-        margin: 2px;
-        flex-basis: calc(${percentage}% - 4px);
-        min-height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        border: 1px solid #333;
-      ">
-        <strong>${it.plant.name}</strong><br>
-        <span style="font-size: 0.9em;">${it.count} plants</span><br>
-        <span style="font-size: 0.85em;">${sqft.toFixed(1)} sq ft</span>
-      </div>`;
+      if (greenhouseSqft > 0) {
+        const percentage = (greenhouseSqft / greenhouseTotal * 100);
+        const color = colors[idx % colors.length];
+
+        html += `<div style="
+          background-color: ${color};
+          padding: 15px;
+          margin: 2px;
+          flex-basis: calc(${percentage}% - 4px);
+          min-height: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          border: 1px solid #333;
+        ">
+          <strong>${it.plant.name}</strong><br>
+          <span style="font-size: 0.9em;">${greenhousePlants} plants</span><br>
+          <span style="font-size: 0.85em;">${greenhouseSqft.toFixed(1)} sq ft</span>
+        </div>`;
+      }
     });
 
     html += '</div>';
@@ -332,22 +349,24 @@ function renderGanttChart(plan) {
   // Add legend
   let html = '<div style="margin-bottom: 15px; padding: 10px; background-color: #f5f5f5; border-radius: 5px;">';
   html += '<strong>Legend:</strong> ';
-  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #2196F3; border: 1px solid #333; margin: 0 5px;"></span> Seed Starting ';
-  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #4caf50; border: 1px solid #333; margin: 0 5px;"></span> Transplant/Outdoor ';
-  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #ff9800; border: 1px solid #333; margin: 0 5px;"></span> Greenhouse ';
-  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #f44336; border: 1px solid #333; margin: 0 5px;"></span> Harvesting';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #2196F3; border: 1px solid #333; margin: 0 5px;"></span> Indoor Seeding ';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #90CAF9; border: 1px solid #333; margin: 0 5px;"></span> Direct Sow (Outdoor) ';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #ff9800; border: 1px solid #333; margin: 0 5px;"></span> Greenhouse Growing ';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #4caf50; border: 1px solid #333; margin: 0 5px;"></span> Outdoor Growing ';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #ff7043; border: 1px solid #333; margin: 0 5px;"></span> Greenhouse Harvest ';
+  html += '<span style="display: inline-block; width: 20px; height: 20px; background-color: #f44336; border: 1px solid #333; margin: 0 5px;"></span> Outdoor Harvest';
   html += '</div>';
 
   html += '<div style="overflow-x: auto;">';
   html += '<table style="min-width: 2600px; font-size: 0.75em; border-collapse: collapse;">';
   html += '<thead><tr>';
   html += '<th style="width: 120px; position: sticky; left: 0; background: white; z-index: 10; border: 1px solid #333;">Crop</th>';
-  html += '<th style="width: 80px; position: sticky; left: 120px; background: white; z-index: 10; border: 1px solid #333;">Planting</th>';
-  html += '<th style="width: 70px; position: sticky; left: 200px; background: white; z-index: 10; border: 1px solid #333;">Activity</th>';
+  html += '<th style="width: 90px; position: sticky; left: 120px; background: white; z-index: 10; border: 1px solid #333;">Location</th>';
+  html += '<th style="width: 80px; position: sticky; left: 210px; background: white; z-index: 10; border: 1px solid #333;">Planting</th>';
+  html += '<th style="width: 70px; position: sticky; left: 290px; background: white; z-index: 10; border: 1px solid #333;">Activity</th>';
 
   // Week headers (all 52 weeks)
   for (let w = 1; w <= 52; w++) {
-    const monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'][Math.floor((w - 1) / 4.33)];
     html += `<th style="width: 30px; font-size: 0.7em; border: 1px solid #ddd; writing-mode: vertical-rl; text-orientation: mixed; padding: 2px;">${w}</th>`;
   }
 
@@ -356,87 +375,114 @@ function renderGanttChart(plan) {
   plan.items.forEach(it => {
     if (!it.successionSchedules || it.successionSchedules.length === 0) return;
 
+    const greenhousePlants = it.greenhousePlants || 0;
+    const outdoorPlants = it.outdoorPlants || it.count;
+    const hasGreenhouse = greenhousePlants > 0;
+    const hasOutdoor = outdoorPlants > 0;
+
+    // Determine how many location sections we need
+    const locations = [];
+    if (hasGreenhouse) locations.push({ type: 'greenhouse', plants: greenhousePlants, label: '🏠 Greenhouse' });
+    if (hasOutdoor) locations.push({ type: 'outdoor', plants: outdoorPlants, label: '🌞 Outdoor' });
+
     const successions = it.successionSchedules;
     const rowsPerSuccession = 3; // seed, grow, harvest
-    const totalRows = successions.length * rowsPerSuccession;
+    const totalRows = successions.length * rowsPerSuccession * locations.length;
 
-    successions.forEach((schedule, idx) => {
-      const seedStart = schedule.seed_start_week;
-      const transplant = schedule.transplant_week;
-      const firstHarvest = schedule.first_harvest_week;
-      const lastHarvest = schedule.last_harvest_week;
-      const growColor = it.location === "outdoor" ? '#4caf50' : '#ff9800';
+    let firstRow = true;
 
-      // Label: show window name if available (Spring/Fall), otherwise succession number
-      let successionLabel = '';
-      if (schedule.name) {
-        successionLabel = schedule.name;
-      } else if (successions.length > 1) {
-        successionLabel = `#${idx + 1}`;
-      }
+    locations.forEach(location => {
+      successions.forEach((schedule, idx) => {
+        const seedStart = schedule.seed_start_week;
+        const transplant = schedule.transplant_week;
+        const firstHarvest = schedule.first_harvest_week;
+        const lastHarvest = schedule.last_harvest_week;
 
-      // Seed starting row
-      html += `<tr>`;
-      if (idx === 0) {
-        html += `<td rowspan="${totalRows}" style="position: sticky; left: 0; background: white; z-index: 5; border: 1px solid #333; vertical-align: top; padding: 5px;"><strong>${it.plant.name}</strong><br><span style="font-size: 0.9em;">(${it.count} plants)</span></td>`;
-      }
-      html += `<td rowspan="3" style="position: sticky; left: 120px; background: white; z-index: 5; border: 1px solid #333; vertical-align: middle; text-align: center;">${successionLabel}</td>`;
-      html += `<td style="position: sticky; left: 200px; background: white; z-index: 5; border: 1px solid #333; padding: 2px;">Seed</td>`;
-      for (let w = 1; w <= 52; w++) {
-        const isSeedWeek = (w >= seedStart && w < transplant);
-        html += `<td style="
-          background-color: ${isSeedWeek ? '#2196F3' : '#f9f9f9'};
-          border: 1px solid #e0e0e0;
-          padding: 0;
-          height: 18px;
-          min-width: 30px;
-        "></td>`;
-      }
-      html += '</tr>';
+        // Determine if this is indoor or outdoor seeding
+        const isIndoorSeeding = (location.type === 'greenhouse') || (transplant > seedStart);
+        const seedColor = isIndoorSeeding ? '#2196F3' : '#90CAF9';
+        const seedLabel = isIndoorSeeding ? 'Seed (indoor)' : 'Seed (direct)';
 
-      // Transplant/Growing row
-      html += `<tr>`;
-      html += `<td style="position: sticky; left: 200px; background: white; z-index: 5; border: 1px solid #333; padding: 2px;">Grow</td>`;
-      for (let w = 1; w <= 52; w++) {
-        const isGrowWeek = (w >= transplant && w < firstHarvest);
-        html += `<td style="
-          background-color: ${isGrowWeek ? growColor : '#f9f9f9'};
-          border: 1px solid #e0e0e0;
-          padding: 0;
-          height: 18px;
-          min-width: 30px;
-        "></td>`;
-      }
-      html += '</tr>';
+        // Grow and harvest colors based on location
+        const growColor = location.type === 'greenhouse' ? '#ff9800' : '#4caf50';
+        const harvestColor = location.type === 'greenhouse' ? '#ff7043' : '#f44336';
 
-      // Harvesting row
-      html += `<tr>`;
-      html += `<td style="position: sticky; left: 200px; background: white; z-index: 5; border: 1px solid #333; padding: 2px;">Harvest</td>`;
-      for (let w = 1; w <= 52; w++) {
-        let isHarvestWeek = false;
-
-        // Handle year-wrap for garlic
-        if (lastHarvest < firstHarvest) {
-          isHarvestWeek = (w >= firstHarvest || w <= lastHarvest);
-        } else {
-          isHarvestWeek = (w >= firstHarvest && w <= lastHarvest);
+        // Label: show window name if available (Spring/Fall), otherwise succession number
+        let successionLabel = '';
+        if (schedule.name) {
+          successionLabel = schedule.name;
+        } else if (successions.length > 1) {
+          successionLabel = `#${idx + 1}`;
         }
 
-        html += `<td style="
-          background-color: ${isHarvestWeek ? '#f44336' : '#f9f9f9'};
-          border: 1px solid #e0e0e0;
-          padding: 0;
-          height: 18px;
-          min-width: 30px;
-        "></td>`;
-      }
-      html += '</tr>';
+        // Seed starting row
+        html += `<tr>`;
+        if (firstRow) {
+          html += `<td rowspan="${totalRows}" style="position: sticky; left: 0; background: white; z-index: 5; border: 1px solid #333; vertical-align: top; padding: 5px;"><strong>${it.plant.name}</strong><br><span style="font-size: 0.9em;">(${it.count} total)</span></td>`;
+          firstRow = false;
+        }
+        if (idx === 0) {
+          const locationRows = successions.length * rowsPerSuccession;
+          html += `<td rowspan="${locationRows}" style="position: sticky; left: 120px; background: white; z-index: 5; border: 1px solid #333; vertical-align: middle; text-align: center;">${location.label}<br><span style="font-size: 0.9em;">(${location.plants})</span></td>`;
+        }
+        html += `<td rowspan="3" style="position: sticky; left: 210px; background: white; z-index: 5; border: 1px solid #333; vertical-align: middle; text-align: center;">${successionLabel}</td>`;
+        html += `<td style="position: sticky; left: 290px; background: white; z-index: 5; border: 1px solid #333; padding: 2px; font-size: 0.85em;">${seedLabel}</td>`;
+        for (let w = 1; w <= 52; w++) {
+          const isSeedWeek = (w >= seedStart && w < transplant);
+          html += `<td style="
+            background-color: ${isSeedWeek ? seedColor : '#f9f9f9'};
+            border: 1px solid #e0e0e0;
+            padding: 0;
+            height: 18px;
+            min-width: 30px;
+          "></td>`;
+        }
+        html += '</tr>';
+
+        // Transplant/Growing row
+        html += `<tr>`;
+        html += `<td style="position: sticky; left: 290px; background: white; z-index: 5; border: 1px solid #333; padding: 2px;">Grow</td>`;
+        for (let w = 1; w <= 52; w++) {
+          const isGrowWeek = (w >= transplant && w < firstHarvest);
+          html += `<td style="
+            background-color: ${isGrowWeek ? growColor : '#f9f9f9'};
+            border: 1px solid #e0e0e0;
+            padding: 0;
+            height: 18px;
+            min-width: 30px;
+          "></td>`;
+        }
+        html += '</tr>';
+
+        // Harvesting row
+        html += `<tr>`;
+        html += `<td style="position: sticky; left: 290px; background: white; z-index: 5; border: 1px solid #333; padding: 2px;">Harvest</td>`;
+        for (let w = 1; w <= 52; w++) {
+          let isHarvestWeek = false;
+
+          // Handle year-wrap for overwintering crops
+          if (lastHarvest < firstHarvest) {
+            isHarvestWeek = (w >= firstHarvest || w <= lastHarvest);
+          } else {
+            isHarvestWeek = (w >= firstHarvest && w <= lastHarvest);
+          }
+
+          html += `<td style="
+            background-color: ${isHarvestWeek ? harvestColor : '#f9f9f9'};
+            border: 1px solid #e0e0e0;
+            padding: 0;
+            height: 18px;
+            min-width: 30px;
+          "></td>`;
+        }
+        html += '</tr>';
+      });
     });
   });
 
   html += '</tbody></table>';
   html += '</div>';
-  html += '<p style="font-size: 0.85em; margin-top: 10px;"><em>Note: Each numbered planting represents a succession planting. All 52 weeks are shown for precise scheduling.</em></p>';
+  html += '<p style="font-size: 0.85em; margin-top: 10px;"><em>Note: Plants split between greenhouse and outdoor show separate location rows. Indoor seeding occurs when transplanting is needed; direct sow plants are seeded outdoors.</em></p>';
 
   container.innerHTML = html;
 }

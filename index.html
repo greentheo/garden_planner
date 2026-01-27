@@ -113,15 +113,16 @@
                placeholder="Leave blank for calculated size">
       </div>
 
-      <div class="form-group" style="margin: 15px 0;">
-        <label style="display: flex; align-items: center; cursor: pointer;">
-          <input type="checkbox" id="greenhouse-available" name="greenhouse-available" style="margin-right: 8px;">
-          <span>I have a greenhouse available
-            <span class="tooltip" title="Check this if you have a greenhouse. In zones 3-6, this extends your growing season by 4-8 weeks with earlier spring starts and later fall harvests. In zones 7+, greenhouses are typically too hot and outdoor growing is preferred.">ℹ️</span>
-          </span>
+      <div class="form-group">
+        <label for="greenhouse-sqft">
+          Greenhouse Size (sq ft):
+          <span class="tooltip" title="Enter your available greenhouse size in square feet. Plants will be allocated to the greenhouse based on priority (tender plants first) and diversity (variety across all plants). Set to 0 for outdoor-only garden. High-priority plants like tomatoes, peppers, and cucumbers fill greenhouse space first, followed by greens and other crops.">ℹ️</span>
         </label>
-        <small style="display: block; margin-left: 28px; color: #666;">
-          Unchecked = outdoor-only schedules (default, most realistic for home gardeners)
+        <input type="number" id="greenhouse-sqft" name="greenhouse-sqft" min="0" max="10000" value="0" step="50"
+               placeholder="e.g., 200"
+               title="Your greenhouse size in square feet. Set to 0 if no greenhouse available.">
+        <small style="display: block; margin-top: 5px; color: #666;">
+          Set to 0 for outdoor-only garden (default)
         </small>
       </div>
 
@@ -134,7 +135,7 @@
     <div id="plan-details"></div>
   </section>
 
-  <script type="module" src="src/app.js"></script>
+  <script type="module" src="src/app.js?v=4"></script>
   <script>
     // Update food supplementation percentage display
     const slider = document.getElementById('food-supplementation');

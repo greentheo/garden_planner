@@ -210,6 +210,103 @@ export function calculateSuccessionPlantings(plant, baseSchedule) {
   }];
 }
 
+/**
+ * Allocates plants between greenhouse and outdoor space
+ * Uses a two-phase greedy algorithm:
+ *   Phase 1: Diversity - allocate a fraction of each plant to greenhouse
+ *   Phase 2: Priority - fill remaining space with high-priority plants
+ * @param {Array} items - Array of plant items to allocate
+ * @param {number} availableGreenhouseSqft - Available greenhouse space
+ * @returns {Object} - Allocation results with used/available space
+ */
+function allocateGreenhouseSpace(items, availableGreenhouseSqft) {
+  // If no greenhouse, everything goes outdoor
+  if (availableGreenhouseSqft <= 0) {
+    items.forEach(item => {
+      item.greenhousePlants = 0;
+      item.outdoorPlants = item.count;
+      item.greenhouseSqft = 0;
+      item.outdoorSqft = item.sqft;
+    });
+    return { used: 0, available: 0, utilization: 0 };
+  }
+
+  let remainingSpace = availableGreenhouseSqft;
+
+  // PHASE 1: Diversity - allocate 25% of each plant if possible
+  const diversityFraction = 0.25;
+
+  for (const item of items) {
+    const targetPlants = Math.ceil(item.count * diversityFraction);
+    const targetSqft = targetPlants / item.plant.plants_per_sqft;
+
+    if (targetSqft <= remainingSpace) {
+      item.greenhousePlants = targetPlants;
+      item.greenhouseSqft = targetSqft;
+      remainingSpace -= targetSqft;
+    } else {
+      // Try to fit what we can
+      const plantsToAdd = Math.floor(remainingSpace * item.plant.plants_per_sqft);
+      if (plantsToAdd > 0) {
+        item.greenhousePlants = plantsToAdd;
+        item.greenhouseSqft = plantsToAdd / item.plant.plants_per_sqft;
+        remainingSpace -= item.greenhouseSqft;
+      } else {
+        item.greenhousePlants = 0;
+        item.greenhouseSqft = 0;
+      }
+    }
+  }
+
+  // PHASE 2: Priority Fill - sort by greenhouse_priority, fill remainder
+  const sortedItems = [...items].sort((a, b) =>
+    (b.plant.greenhouse_priority || 1) - (a.plant.greenhouse_priority || 1)
+  );
+
+  for (const item of sortedItems) {
+    const plantsInGreenhouse = item.greenhousePlants || 0;
+    const remainingPlants = item.count - plantsInGreenhouse;
+
+    if (remainingPlants > 0 && remainingSpace > 0.1) {
+      const additionalSqft = remainingPlants / item.plant.plants_per_sqft;
+
+      if (additionalSqft <= remainingSpace) {
+        // All remaining plants fit
+        item.greenhousePlants += remainingPlants;
+        item.greenhouseSqft += additionalSqft;
+        remainingSpace -= additionalSqft;
+      } else {
+        // Partial fit - fill remaining space
+        const plantsToAdd = Math.floor(remainingSpace * item.plant.plants_per_sqft);
+        if (plantsToAdd > 0) {
+          item.greenhousePlants += plantsToAdd;
+          const addedSqft = plantsToAdd / item.plant.plants_per_sqft;
+          item.greenhouseSqft += addedSqft;
+          remainingSpace -= addedSqft;
+        }
+      }
+    }
+
+    if (remainingSpace <= 0.1) break; // Stop if essentially full
+  }
+
+  // PHASE 3: Set outdoor remainder
+  items.forEach(item => {
+    item.outdoorPlants = item.count - (item.greenhousePlants || 0);
+    item.outdoorSqft = item.outdoorPlants / item.plant.plants_per_sqft;
+  });
+
+  const used = availableGreenhouseSqft - remainingSpace;
+  const utilization = (used / availableGreenhouseSqft * 100);
+
+  return {
+    used,
+    available: availableGreenhouseSqft,
+    remaining: remainingSpace,
+    utilization
+  };
+}
+
 export function calculatePlan({
   zone,
   recipeId,
@@ -218,7 +315,7 @@ export function calculatePlan({
   plants,
   recipes,
   caloriesPerPerson = 2000,
-  useGreenhouseExtension = true,
+  greenhouseSqft = 0,
   foodSupplementationPercent = 100
 }) {
   const recipe = recipes.find(r => r.id === recipeId);
@@ -261,7 +358,8 @@ export function calculatePlan({
       const count = Math.ceil(plantCaloriesNeeded / plantCaloriesPerPlant);
 
       // Get planting schedule for this zone
-      const baseSchedule = getPlantingSchedule(plant, zone, useGreenhouseExtension);
+      // Use greenhouse schedules if available (timing only - actual allocation happens later)
+      const baseSchedule = getPlantingSchedule(plant, zone, greenhouseSqft > 0);
 
       // Skip this plant if it cannot be grown without greenhouse
       if (!baseSchedule) {
@@ -295,6 +393,9 @@ export function calculatePlan({
       // Calculate plants per succession
       const plantsPerSuccession = Math.ceil(count / allSuccessionSchedules.length);
 
+      // Calculate space required (plants divided by plants_per_sqft)
+      const sqft = count / plant.plants_per_sqft;
+
       items.push({
         plant,
         category: comp.category,
@@ -302,6 +403,7 @@ export function calculatePlan({
         plantCaloriesNeeded,
         plantCaloriesPerPlant,
         count,
+        sqft,
         schedule: Array.isArray(baseSchedule) ? baseSchedule[0] : baseSchedule,
         successionSchedules: allSuccessionSchedules,
         plantsPerSuccession,
@@ -312,20 +414,19 @@ export function calculatePlan({
     });
   });
 
-  // Calculate total square footage, separated by location
+  // Allocate plants between greenhouse and outdoor based on available space
+  const greenhouseAllocation = allocateGreenhouseSpace(items, greenhouseSqft);
+
+  // Calculate total square footage from allocated values
   let outdoorSqFt = 0;
-  let greenhouseSqFt = 0;
+  let greenhouseSqftUsed = 0;
 
   items.forEach(it => {
-    const sqft = it.plant.seed_per_sqft * it.count;
-    if (it.location === "outdoor") {
-      outdoorSqFt += sqft;
-    } else {
-      greenhouseSqFt += sqft;
-    }
+    outdoorSqFt += it.outdoorSqft || 0;
+    greenhouseSqftUsed += it.greenhouseSqft || 0;
   });
 
-  const totalSqFt = outdoorSqFt + greenhouseSqFt;
+  const totalSqFt = outdoorSqFt + greenhouseSqftUsed;
 
   // Calculate totals for summary
   const totalCaloriesNeeded = items.reduce((sum, it) => sum + it.plantCaloriesNeeded, 0);
@@ -341,8 +442,9 @@ export function calculatePlan({
     household,
     gardenSize: totalSqFt,
     outdoorSqFt,
-    greenhouseSqFt,
-    useGreenhouseExtension,
+    greenhouseSqftUsed,
+    greenhouseSqftAvailable: greenhouseSqft,
+    greenhouseAllocation,
     foodSupplementationPercent,
     items,
     summary: {
