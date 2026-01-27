@@ -1,0 +1,162 @@
+[
+  {
+    "id": "veg",
+    "name": "Vegetarian",
+    "recipe_percentage": 0.3,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.30 },
+      { "category": "legume", "calorie_share": 0.25 },
+      { "category": "nightshade", "calorie_share": 0.15 },
+      { "category": "leafy-greens", "calorie_share": 0.10 },
+      { "category": "cruciferous", "calorie_share": 0.10 },
+      { "category": "cucurbit", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.03 }
+    ]
+  },
+  {
+    "id": "mediterranean",
+    "name": "Mediterranean",
+    "recipe_percentage": 0.35,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.25 },
+      { "category": "nightshade", "calorie_share": 0.25 },
+      { "category": "cucurbit", "calorie_share": 0.15 },
+      { "category": "legume", "calorie_share": 0.15 },
+      { "category": "leafy-greens", "calorie_share": 0.10 },
+      { "category": "root-vegetable", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.02 },
+      { "category": "herb", "calorie_share": 0.01 }
+    ]
+  },
+  {
+    "id": "high-calorie",
+    "name": "High-Calorie (Starchy Vegetables)",
+    "recipe_percentage": 0.5,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.45 },
+      { "category": "grain", "calorie_share": 0.20 },
+      { "category": "starchy", "calorie_share": 0.15 },
+      { "category": "legume", "calorie_share": 0.10 },
+      { "category": "root-vegetable", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.03 }
+    ]
+  },
+  {
+    "id": "salad-greens",
+    "name": "Salad & Greens Focus",
+    "recipe_percentage": 0.25,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.30 },
+      { "category": "leafy-greens", "calorie_share": 0.25 },
+      { "category": "legume", "calorie_share": 0.20 },
+      { "category": "nightshade", "calorie_share": 0.10 },
+      { "category": "root-vegetable", "calorie_share": 0.10 },
+      { "category": "cucurbit", "calorie_share": 0.03 },
+      { "category": "allium", "calorie_share": 0.02 }
+    ]
+  },
+  {
+    "id": "protein-rich",
+    "name": "Protein-Rich Vegetables",
+    "recipe_percentage": 0.4,
+    "components": [
+      { "category": "legume", "calorie_share": 0.40 },
+      { "category": "starchy-root", "calorie_share": 0.25 },
+      { "category": "cruciferous", "calorie_share": 0.15 },
+      { "category": "leafy-greens", "calorie_share": 0.10 },
+      { "category": "root-vegetable", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.03 }
+    ]
+  },
+  {
+    "id": "root-vegetable",
+    "name": "Root Vegetables",
+    "recipe_percentage": 0.45,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.50 },
+      { "category": "root-vegetable", "calorie_share": 0.30 },
+      { "category": "legume", "calorie_share": 0.10 },
+      { "category": "cruciferous", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.03 }
+    ]
+  },
+  {
+    "id": "summer-harvest",
+    "name": "Summer Harvest",
+    "recipe_percentage": 0.4,
+    "components": [
+      { "category": "grain", "calorie_share": 0.25 },
+      { "category": "nightshade", "calorie_share": 0.20 },
+      { "category": "cucurbit", "calorie_share": 0.20 },
+      { "category": "legume", "calorie_share": 0.15 },
+      { "category": "leafy-greens", "calorie_share": 0.10 },
+      { "category": "fruit", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.02 },
+      { "category": "herb", "calorie_share": 0.01 }
+    ]
+  },
+  {
+    "id": "fall-winter",
+    "name": "Fall & Winter Storage",
+    "recipe_percentage": 0.5,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.35 },
+      { "category": "starchy", "calorie_share": 0.25 },
+      { "category": "root-vegetable", "calorie_share": 0.20 },
+      { "category": "cruciferous", "calorie_share": 0.12 },
+      { "category": "legume", "calorie_share": 0.05 },
+      { "category": "allium", "calorie_share": 0.02 },
+      { "category": "perennial", "calorie_share": 0.01 }
+    ]
+  },
+  {
+    "id": "spring-fresh",
+    "name": "Spring Fresh Greens",
+    "recipe_percentage": 0.3,
+    "components": [
+      { "category": "legume", "calorie_share": 0.35 },
+      { "category": "starchy-root", "calorie_share": 0.25 },
+      { "category": "leafy-greens", "calorie_share": 0.20 },
+      { "category": "root-vegetable", "calorie_share": 0.12 },
+      { "category": "cruciferous", "calorie_share": 0.05 },
+      { "category": "allium", "calorie_share": 0.02 },
+      { "category": "herb", "calorie_share": 0.01 }
+    ]
+  },
+  {
+    "id": "diverse-garden",
+    "name": "Diverse Garden Mix",
+    "recipe_percentage": 0.45,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.25 },
+      { "category": "legume", "calorie_share": 0.20 },
+      { "category": "nightshade", "calorie_share": 0.15 },
+      { "category": "cruciferous", "calorie_share": 0.12 },
+      { "category": "leafy-greens", "calorie_share": 0.10 },
+      { "category": "cucurbit", "calorie_share": 0.08 },
+      { "category": "root-vegetable", "calorie_share": 0.07 },
+      { "category": "allium", "calorie_share": 0.02 },
+      { "category": "herb", "calorie_share": 0.01 }
+    ]
+  },
+  {
+    "id": "all",
+    "name": "All - Maximum Variety",
+    "recipe_percentage": 1.0,
+    "components": [
+      { "category": "starchy-root", "calorie_share": 0.22 },
+      { "category": "legume", "calorie_share": 0.18 },
+      { "category": "starchy", "calorie_share": 0.12 },
+      { "category": "grain", "calorie_share": 0.10 },
+      { "category": "nightshade", "calorie_share": 0.10 },
+      { "category": "cucurbit", "calorie_share": 0.08 },
+      { "category": "cruciferous", "calorie_share": 0.07 },
+      { "category": "root-vegetable", "calorie_share": 0.06 },
+      { "category": "leafy-greens", "calorie_share": 0.04 },
+      { "category": "fruit", "calorie_share": 0.02 },
+      { "category": "allium", "calorie_share": 0.005 },
+      { "category": "perennial", "calorie_share": 0.003 },
+      { "category": "herb", "calorie_share": 0.002 }
+    ]
+  }
+]

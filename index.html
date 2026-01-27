@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garden Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Garden Planner</h1>
+  </header>
+
+  <section id="input-section">
+    <form id="garden-form">
+      <label for="zone">USDA Zone:</label>
+      <select id="zone" name="zone" required>
+        <option value="">-- select --</option>
+      </select>
+
+      <label for="recipe">Recipe Type:</label>
+      <select id="recipe" name="recipe" required>
+        <option value="">-- select --</option>
+      </select>
+
+      <label for="household">Household Size:</label>
+      <input type="number" id="household" name="household" min="1" required>
+
+      <label for="garden-size">Garden Size (sq ft) (optional):</label>
+      <input type="number" id="garden-size" name="garden-size" min="1">
+
+      <div style="margin: 15px 0;">
+        <label style="display: flex; align-items: center; cursor: pointer;">
+          <input type="checkbox" id="greenhouse-available" name="greenhouse-available" style="margin-right: 8px;">
+          <span>I have a greenhouse available (for season extension)</span>
+        </label>
+        <small style="display: block; margin-left: 28px; color: #666;">
+          If unchecked, plan will only include outdoor growing schedules
+        </small>
+      </div>
+
+      <button type="submit">Generate Plan</button>
+    </form>
+  </section>
+
+  <section id="plan-section" style="display:none;">
+    <h2>Your Garden Plan</h2>
+    <div id="plan-details"></div>
+  </section>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
