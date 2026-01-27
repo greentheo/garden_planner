@@ -98,6 +98,22 @@ export function showPlan(plan) {
   html += '<div style="margin-top: 20px; padding: 15px; background-color: #f5f5f5; border-radius: 5px;">';
   html += '<h4 style="margin-top: 0;">Garden Space Requirements</h4>';
 
+  // Add food supplementation goal message
+  const suppPercent = plan.foodSupplementationPercent || 100;
+  let suppLabel = '';
+  if (suppPercent === 100) {
+    suppLabel = 'Full self-sufficiency';
+  } else if (suppPercent >= 75) {
+    suppLabel = 'Major food source';
+  } else if (suppPercent >= 50) {
+    suppLabel = 'Half your food needs';
+  } else if (suppPercent >= 25) {
+    suppLabel = 'Significant supplement';
+  } else {
+    suppLabel = 'Small supplement';
+  }
+  html += `<p style="color: #2196f3; font-weight: bold; margin-bottom: 15px;">🎯 Goal: ${suppPercent}% of annual food needs (${suppLabel})</p>`;
+
   // Add greenhouse status message
   const greenhouseStatus = plan.useGreenhouseExtension
     ? '✓ Greenhouse available for season extension'

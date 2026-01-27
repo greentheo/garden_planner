@@ -17,38 +17,115 @@
 </head>
 <body>
   <header>
-    <h1>Garden Planner</h1>
+    <h1>🌱 Garden Planner</h1>
   </header>
+
+  <section id="intro-section" style="max-width: 900px; margin: 0 auto 30px; padding: 20px; background: linear-gradient(135deg, #e8f5e9 0%, #fff9c4 100%); border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+    <h2 style="margin-top: 0; color: #2e7d32;">Plan Your Perfect Vegetable Garden</h2>
+    <p style="font-size: 16px; line-height: 1.6; color: #333;">
+      This zone-aware garden planner helps you create a complete vegetable garden plan based on your climate,
+      household size, and growing goals. Get realistic planting schedules, space requirements, and plant varieties
+      tailored to your USDA hardiness zone.
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 15px;">
+      <div style="background: white; padding: 12px; border-radius: 5px; border-left: 4px solid #4caf50;">
+        <strong>📅 52-Week Schedules</strong><br>
+        <small>Precise planting, transplanting, and harvest dates</small>
+      </div>
+      <div style="background: white; padding: 12px; border-radius: 5px; border-left: 4px solid #ff9800;">
+        <strong>🌡️ Zone-Aware</strong><br>
+        <small>Automatic plant selection for your climate</small>
+      </div>
+      <div style="background: white; padding: 12px; border-radius: 5px; border-left: 4px solid #2196f3;">
+        <strong>🥕 50+ Plants</strong><br>
+        <small>Diverse varieties across 13 categories</small>
+      </div>
+    </div>
+  </section>
 
   <section id="input-section">
     <form id="garden-form">
-      <label for="zone">USDA Zone:</label>
-      <select id="zone" name="zone" required>
-        <option value="">-- select --</option>
-      </select>
+      <div class="form-group">
+        <label for="zone">
+          USDA Zone:
+          <span class="tooltip" title="Your USDA Hardiness Zone determines which plants can grow in your climate and when to plant them. If you don't know your zone, search 'USDA hardiness zone map' with your zip code.">ℹ️</span>
+        </label>
+        <select id="zone" name="zone" required title="Select your USDA hardiness zone (3-11). This determines which plants will grow in your area and when to plant them.">
+          <option value="">-- select your zone --</option>
+        </select>
+      </div>
 
-      <label for="recipe">Recipe Type:</label>
-      <select id="recipe" name="recipe" required>
-        <option value="">-- select --</option>
-      </select>
+      <div class="form-group">
+        <label for="recipe">
+          Recipe Type:
+          <span class="tooltip" title="Recipes are pre-configured plant combinations focused on different growing goals. Each recipe balances calories across plant categories (nightshades, leafy greens, legumes, etc.).">ℹ️</span>
+        </label>
+        <select id="recipe" name="recipe" required title="Choose a recipe that matches your growing goals. Each recipe provides a balanced mix of vegetables.">
+          <option value="">-- select a recipe --</option>
+        </select>
+      </div>
 
-      <label for="household">Household Size:</label>
-      <input type="number" id="household" name="household" min="1" required>
+      <div class="form-group">
+        <label for="household">
+          Household Size:
+          <span class="tooltip" title="Enter the number of people you're growing for. The planner calculates 2,000 calories per person per day and generates quantities to meet those needs based on your selected recipe percentage.">ℹ️</span>
+        </label>
+        <input type="number" id="household" name="household" min="1" max="20" required
+               title="Number of people you're growing food for (used to calculate calorie needs)"
+               placeholder="e.g., 4">
+      </div>
 
-      <label for="garden-size">Garden Size (sq ft) (optional):</label>
-      <input type="number" id="garden-size" name="garden-size" min="1">
+      <div class="form-group">
+        <label for="food-supplementation">
+          Food Supplementation Goal:
+          <span class="tooltip" title="What percentage of your household's annual food needs do you want to grow? 100% = grow all your food, 50% = grow half your food needs, 25% = supplemental garden. This scales the entire plan proportionally.">ℹ️</span>
+        </label>
+        <div style="display: flex; align-items: center; gap: 15px;">
+          <input type="range" id="food-supplementation" name="food-supplementation"
+                 min="10" max="100" step="15" value="100" list="supplementation-markers"
+                 style="flex: 1;"
+                 title="Slide to adjust what percentage of your food needs the garden should provide">
+          <span id="supplementation-value" style="font-weight: bold; font-size: 18px; color: #4caf50; min-width: 50px;">100%</span>
+        </div>
+        <datalist id="supplementation-markers">
+          <option value="10" label="10%"></option>
+          <option value="25" label="25%"></option>
+          <option value="40" label="40%"></option>
+          <option value="55" label="55%"></option>
+          <option value="70" label="70%"></option>
+          <option value="85" label="85%"></option>
+          <option value="100" label="100%"></option>
+        </datalist>
+        <div style="display: flex; justify-content: space-between; font-size: 12px; color: #666; margin-top: 5px;">
+          <span>10% (Small supplement)</span>
+          <span>50% (Half)</span>
+          <span>100% (Full self-sufficiency)</span>
+        </div>
+      </div>
 
-      <div style="margin: 15px 0;">
+      <div class="form-group">
+        <label for="garden-size">
+          Garden Size (sq ft):
+          <span class="tooltip" title="Optional. Leave blank to see the calculated space requirements. If you enter a size, the plan will show you what percentage of your available space will be used.">ℹ️</span>
+        </label>
+        <input type="number" id="garden-size" name="garden-size" min="1"
+               title="Optional: Enter your available garden space in square feet"
+               placeholder="Leave blank for calculated size">
+      </div>
+
+      <div class="form-group" style="margin: 15px 0;">
         <label style="display: flex; align-items: center; cursor: pointer;">
           <input type="checkbox" id="greenhouse-available" name="greenhouse-available" style="margin-right: 8px;">
-          <span>I have a greenhouse available (for season extension)</span>
+          <span>I have a greenhouse available
+            <span class="tooltip" title="Check this if you have a greenhouse. In zones 3-6, this extends your growing season by 4-8 weeks with earlier spring starts and later fall harvests. In zones 7+, greenhouses are typically too hot and outdoor growing is preferred.">ℹ️</span>
+          </span>
         </label>
         <small style="display: block; margin-left: 28px; color: #666;">
-          If unchecked, plan will only include outdoor growing schedules
+          Unchecked = outdoor-only schedules (default, most realistic for home gardeners)
         </small>
       </div>
 
-      <button type="submit">Generate Plan</button>
+      <button type="submit">🌿 Generate Garden Plan</button>
     </form>
   </section>
 
@@ -58,5 +135,14 @@
   </section>
 
   <script type="module" src="src/app.js"></script>
+  <script>
+    // Update food supplementation percentage display
+    const slider = document.getElementById('food-supplementation');
+    const valueDisplay = document.getElementById('supplementation-value');
+
+    slider.addEventListener('input', function() {
+      valueDisplay.textContent = this.value + '%';
+    });
+  </script>
 </body>
 </html>

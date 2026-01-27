@@ -218,14 +218,16 @@ export function calculatePlan({
   plants,
   recipes,
   caloriesPerPerson = 2000,
-  useGreenhouseExtension = true
+  useGreenhouseExtension = true,
+  foodSupplementationPercent = 100
 }) {
   const recipe = recipes.find(r => r.id === recipeId);
   if (!recipe) throw new Error('Recipe not found');
 
   // Calculate annual calorie needs: household * 2000 calories/day * 365 days
   const totalCalories = caloriesPerPerson * household * 365;
-  const recipeCalories = totalCalories * (recipe.recipe_percentage || 1);
+  // Apply recipe percentage and food supplementation percentage
+  const recipeCalories = totalCalories * (recipe.recipe_percentage || 1) * (foodSupplementationPercent / 100);
 
   const items = [];
 
@@ -341,6 +343,7 @@ export function calculatePlan({
     outdoorSqFt,
     greenhouseSqFt,
     useGreenhouseExtension,
+    foodSupplementationPercent,
     items,
     summary: {
       totalCaloriesNeeded,

@@ -24,9 +24,19 @@ document.getElementById('garden-form').addEventListener('submit', e => {
   const gardenSizeInput = document.getElementById('garden-size').value;
   const gardenSize = gardenSizeInput ? parseFloat(gardenSizeInput) : null;
   const useGreenhouseExtension = document.getElementById('greenhouse-available').checked;
+  const foodSupplementationPercent = parseInt(document.getElementById('food-supplementation').value, 10);
 
   try {
-    const plan = calculatePlan({ zone, recipeId, household, gardenSize, plants, recipes, useGreenhouseExtension });
+    const plan = calculatePlan({
+      zone,
+      recipeId,
+      household,
+      gardenSize,
+      plants,
+      recipes,
+      useGreenhouseExtension,
+      foodSupplementationPercent
+    });
     showPlan(plan);
   } catch (err) {
     alert(err.message);
