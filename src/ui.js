@@ -142,7 +142,11 @@ export function showPlan(plan) {
   html += '<h3>Garden Plot Layout</h3>';
   html += '<div id="garden-plot"></div>';
 
-  html += '<h3>Planting Schedule</h3>';
+  html += '<h3>Planting & Harvest Schedule</h3>';
+  html += '<div id="schedule-table"></div>';
+
+  html += '<h3>Visual Timeline (Gantt Chart)</h3>';
+  html += '<p style="font-size: 0.9em; color: #666; margin-bottom: 10px;"><em>Note: Best viewed on desktop/full-size screen. For mobile and printing, use the schedule table above.</em></p>';
   html += '<div id="gantt-chart"></div>';
 
   details.innerHTML = html;
@@ -150,6 +154,7 @@ export function showPlan(plan) {
   // Render visualizations
   renderCalorieChart(plan);
   renderGardenPlot(plan);
+  renderScheduleTable(plan);
   renderGanttChart(plan);
 }
 
@@ -339,6 +344,135 @@ function renderGardenPlot(plan) {
 
     html += '</div>';
   }
+
+  container.innerHTML = html;
+}
+
+function getMonthAndWeek(weekNumber) {
+  // Convert week number (1-52) to "Month - Week X" format
+  // Assuming week 1 = first week of January
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+                      'July', 'August', 'September', 'October', 'November', 'December'];
+
+  // Approximate: 4.33 weeks per month
+  const monthIndex = Math.floor((weekNumber - 1) / 4.33);
+  const weekInMonth = ((weekNumber - 1) % 4.33) + 1;
+
+  const month = monthNames[Math.min(monthIndex, 11)];
+  const week = Math.ceil(weekInMonth);
+
+  return `${month} - Week ${week}`;
+}
+
+function renderScheduleTable(plan) {
+  const container = document.getElementById('schedule-table');
+
+  let html = '<div class="note-tip" style="background: #fff3cd; padding: 12px; border-radius: 5px; border-left: 4px solid #ffc107; margin-bottom: 15px;">';
+  html += '💡 <strong>Tip:</strong> This schedule view is optimized for mobile and printing. For a visual timeline, see the Gantt chart below (best on desktop).';
+  html += '</div>';
+
+  html += '<div class="schedule-table-wrapper">';
+  html += '<table class="schedule-table">';
+  html += '<thead><tr>';
+  html += '<th style="width: 20%;">Crop</th>';
+  html += '<th style="width: 12%;">Location</th>';
+  html += '<th style="width: 8%;">Plants</th>';
+  html += '<th style="width: 30%;">Planting Schedule</th>';
+  html += '<th style="width: 30%;">Harvest Period</th>';
+  html += '</tr></thead><tbody>';
+
+  plan.items.forEach(it => {
+    if (!it.successionSchedules || it.successionSchedules.length === 0) return;
+
+    const greenhousePlants = it.greenhousePlants || 0;
+    const outdoorPlants = it.outdoorPlants || it.count;
+    const hasGreenhouse = greenhousePlants > 0;
+    const hasOutdoor = outdoorPlants > 0;
+
+    // Create locations array
+    const locations = [];
+    if (hasGreenhouse) locations.push({ type: 'greenhouse', plants: greenhousePlants, label: '🏠 Greenhouse' });
+    if (hasOutdoor) locations.push({ type: 'outdoor', plants: outdoorPlants, label: '🌞 Outdoor' });
+
+    const successions = it.successionSchedules;
+
+    locations.forEach(location => {
+      html += '<tr>';
+      html += `<td data-label="Crop"><span class="plant-name">${it.plant.name}</span></td>`;
+      html += `<td data-label="Location"><span class="location-badge location-${location.type}">${location.label}</span></td>`;
+      html += `<td data-label="Plants"><span class="plant-count">${location.plants}</span></td>`;
+
+      // Planting schedule column
+      html += '<td data-label="Planting Schedule">';
+      successions.forEach((schedule, idx) => {
+        const seedStart = getMonthAndWeek(schedule.seed_start_week);
+        const transplant = schedule.transplant_week;
+        const isDirectSow = (transplant === schedule.seed_start_week);
+
+        // Determine succession label
+        let successionLabel = '';
+        if (schedule.name) {
+          successionLabel = schedule.name;
+        } else if (successions.length > 1) {
+          successionLabel = `Succession #${idx + 1}`;
+        } else {
+          successionLabel = 'Planting';
+        }
+
+        html += '<div class="succession-item">';
+        html += `<div class="succession-label">${successionLabel}</div>`;
+        html += '<div class="date-range">';
+
+        if (isDirectSow) {
+          html += `<strong>Direct Sow:</strong> ${seedStart}`;
+        } else {
+          html += `<strong>Start Seeds:</strong> ${seedStart}<br>`;
+          html += `<strong>Transplant:</strong> ${getMonthAndWeek(transplant)}`;
+        }
+
+        html += '</div></div>';
+      });
+      html += '</td>';
+
+      // Harvest period column
+      html += '<td data-label="Harvest Period">';
+
+      // Group harvests by season if multiple successions
+      if (successions.length > 1) {
+        successions.forEach((schedule, idx) => {
+          const firstHarvest = getMonthAndWeek(schedule.first_harvest_week);
+          const lastHarvest = getMonthAndWeek(schedule.last_harvest_week);
+
+          let successionLabel = '';
+          if (schedule.name) {
+            successionLabel = schedule.name;
+          } else {
+            successionLabel = `Succession #${idx + 1}`;
+          }
+
+          html += '<div class="date-range" style="margin-bottom: 8px;">';
+          html += `<strong>${successionLabel}:</strong><br>`;
+          html += `${firstHarvest} to ${lastHarvest}`;
+          html += '</div>';
+        });
+      } else {
+        // Single succession - simple format
+        const firstHarvest = getMonthAndWeek(successions[0].first_harvest_week);
+        const lastHarvest = getMonthAndWeek(successions[0].last_harvest_week);
+
+        html += '<div class="date-range">';
+        html += `<strong>First Harvest:</strong> ${firstHarvest}<br>`;
+        html += `<strong>Last Harvest:</strong> ${lastHarvest}`;
+        html += '</div>';
+      }
+
+      html += '</td>';
+      html += '</tr>';
+    });
+  });
+
+  html += '</tbody></table>';
+  html += '</div>';
 
   container.innerHTML = html;
 }
