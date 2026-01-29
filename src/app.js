@@ -38,6 +38,21 @@ document.getElementById('garden-form').addEventListener('submit', e => {
       foodSupplementationPercent
     });
     showPlan(plan);
+
+    // Track successful plan generation in Google Analytics
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'generate_plan', {
+        event_category: 'Garden Planning',
+        event_label: 'Plan Generated',
+        zone: zone,
+        recipe: recipeId,
+        household_size: household,
+        has_greenhouse: greenhouseSqft > 0,
+        food_supplementation: foodSupplementationPercent,
+        total_plants: plan.summary.totalPlants,
+        garden_sqft: Math.round(plan.gardenSize)
+      });
+    }
   } catch (err) {
     alert(err.message);
   }
