@@ -95,24 +95,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/tomatoes/",
-        "category": "tomatoes",
-        "notes": "8 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/tomatoes/",
-        "category": "tomatoes"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/tomatoes",
-        "category": "tomatoes"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/tomatoes/",
+      "category": "tomatoes",
+      "notes": "8 products available in this category"
+    }
   },
   {
     "id": 2,
@@ -192,24 +180,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
-        "category": "peppers",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/peppers/",
-        "category": "peppers"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/peppers",
-        "category": "peppers"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
+      "category": "peppers",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 3,
@@ -288,24 +264,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/cucumbers/",
-        "category": "cucumbers",
-        "notes": "10 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/cucumbers/",
-        "category": "cucumbers"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/cucumbers",
-        "category": "cucumbers"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cucumbers/",
+      "category": "cucumbers",
+      "notes": "10 products available in this category"
+    }
   },
   {
     "id": 4,
@@ -401,24 +365,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
-        "category": "squash",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/squash/",
-        "category": "squash"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/summer-squash",
-        "category": "squash"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 5,
@@ -514,24 +466,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/carrots/",
-        "category": "carrots",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/carrots/",
-        "category": "carrots"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/carrots",
-        "category": "carrots"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/carrots/",
+      "category": "carrots",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 6,
@@ -609,24 +549,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/lettuce/",
-        "category": "lettuce",
-        "notes": "4 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/lettuce/",
-        "category": "lettuce"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/lettuce",
-        "category": "lettuce"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/lettuce/",
+      "category": "lettuce",
+      "notes": "4 products available in this category"
+    }
   },
   {
     "id": 7,
@@ -722,24 +650,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/spinach/",
-        "category": "spinach",
-        "notes": "10 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/spinach/",
-        "category": "spinach"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/spinach",
-        "category": "spinach"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/spinach/",
+      "category": "spinach",
+      "notes": "10 products available in this category"
+    }
   },
   {
     "id": 8,
@@ -835,24 +751,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
-        "category": "beans",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/beans/",
-        "category": "beans"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/beans",
-        "category": "beans"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 9,
@@ -948,24 +852,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/broccoli/",
-        "category": "broccoli",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/broccoli/",
-        "category": "broccoli"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/broccoli",
-        "category": "broccoli"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/broccoli/",
+      "category": "broccoli",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 10,
@@ -1062,24 +954,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/kale/",
-        "category": "kale",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/kale/",
-        "category": "kale"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/kale",
-        "category": "kale"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/kale/",
+      "category": "kale",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 11,
@@ -1176,19 +1056,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
-        "category": "squash",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/winter-squash",
-        "category": "winter-squash"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 12,
@@ -1284,24 +1157,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
-        "category": "potatoes",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/potatoes/",
-        "category": "potatoes"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/potatoes",
-        "category": "potatoes"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
+      "category": "potatoes",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 13,
@@ -1398,24 +1259,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
-        "category": "potatoes",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/potatoes/",
-        "category": "potatoes"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/potatoes",
-        "category": "potatoes"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
+      "category": "potatoes",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 14,
@@ -1511,24 +1360,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
-        "category": "onions",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/onions/",
-        "category": "onions"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/onions",
-        "category": "onions"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
+      "category": "onions",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 15,
@@ -1606,24 +1443,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/garlic/",
-        "category": "garlic",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/garlic/",
-        "category": "garlic"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/garlic",
-        "category": "garlic"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/garlic/",
+      "category": "garlic",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 16,
@@ -1719,24 +1544,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/cabbage/",
-        "category": "cabbage",
-        "notes": "8 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/cabbage/",
-        "category": "cabbage"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/cabbage",
-        "category": "cabbage"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cabbage/",
+      "category": "cabbage",
+      "notes": "8 products available in this category"
+    }
   },
   {
     "id": 17,
@@ -1883,24 +1696,12 @@
     ],
     "plants_per_sqft": 8,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/peas/",
-        "category": "peas",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/peas/",
-        "category": "peas"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/peas",
-        "category": "peas"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peas/",
+      "category": "peas",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 18,
@@ -1997,24 +1798,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/eggplant/",
-        "category": "eggplant",
-        "notes": "10 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/eggplant/",
-        "category": "eggplant"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/eggplant",
-        "category": "eggplant"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/eggplant/",
+      "category": "eggplant",
+      "notes": "10 products available in this category"
+    }
   },
   {
     "id": 19,
@@ -2108,24 +1897,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/radishes/",
-        "category": "radishes",
-        "notes": "10 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/radishes/",
-        "category": "radishes"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/radishes",
-        "category": "radishes"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/radishes/",
+      "category": "radishes",
+      "notes": "10 products available in this category"
+    }
   },
   {
     "id": 20,
@@ -2219,24 +1996,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/beets/",
-        "category": "beets",
-        "notes": "8 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/beets/",
-        "category": "beets"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/beets",
-        "category": "beets"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beets/",
+      "category": "beets",
+      "notes": "8 products available in this category"
+    }
   },
   {
     "id": 21,
@@ -2317,24 +2082,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
-        "category": "peppers",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/peppers/",
-        "category": "peppers"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/peppers",
-        "category": "peppers"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
+      "category": "peppers",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 22,
@@ -2414,24 +2167,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
-        "category": "melons",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/melons/",
-        "category": "melons"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/melons",
-        "category": "melons"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
+      "category": "melons",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 23,
@@ -2511,24 +2252,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
-        "category": "melons",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/melons/",
-        "category": "melons"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/melons",
-        "category": "melons"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
+      "category": "melons",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 24,
@@ -2624,24 +2353,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
-        "category": "greens",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/greens/",
-        "category": "greens"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/greens",
-        "category": "greens"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
+      "category": "greens",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 25,
@@ -2737,24 +2454,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/swiss-chard/",
-        "category": "swiss-chard",
-        "notes": "7 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/swiss-chard/",
-        "category": "swiss-chard"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/swiss-chard",
-        "category": "swiss-chard"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/swiss-chard/",
+      "category": "swiss-chard",
+      "notes": "7 products available in this category"
+    }
   },
   {
     "id": 26,
@@ -2851,24 +2556,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/collards/",
-        "category": "collards",
-        "notes": "3 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/collards/",
-        "category": "collards"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/collards",
-        "category": "collards"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/collards/",
+      "category": "collards",
+      "notes": "3 products available in this category"
+    }
   },
   {
     "id": 27,
@@ -2963,24 +2656,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/turnips/",
-        "category": "turnips",
-        "notes": "4 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/turnips/",
-        "category": "turnips"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/turnips",
-        "category": "turnips"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/turnips/",
+      "category": "turnips",
+      "notes": "4 products available in this category"
+    }
   },
   {
     "id": 28,
@@ -3076,24 +2757,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/parsnips/",
-        "category": "parsnips",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/parsnips/",
-        "category": "parsnips"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/parsnips",
-        "category": "parsnips"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/parsnips/",
+      "category": "parsnips",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 29,
@@ -3189,24 +2858,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/brussels-sprouts/",
-        "category": "brussels-sprouts",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/brussels-sprouts/",
-        "category": "brussels-sprouts"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/brussels-sprouts",
-        "category": "brussels-sprouts"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/brussels-sprouts/",
+      "category": "brussels-sprouts",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 30,
@@ -3302,24 +2959,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/cauliflower/",
-        "category": "cauliflower",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/cauliflower/",
-        "category": "cauliflower"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/cauliflower",
-        "category": "cauliflower"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cauliflower/",
+      "category": "cauliflower",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 31,
@@ -3398,24 +3043,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
-        "category": "beans",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/beans/",
-        "category": "beans"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/beans",
-        "category": "beans"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 32,
@@ -3511,24 +3144,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/leeks/",
-        "category": "leeks",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/leeks/",
-        "category": "leeks"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/leeks",
-        "category": "leeks"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/leeks/",
+      "category": "leeks",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 33,
@@ -3624,24 +3245,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/shallots/",
-        "category": "shallots",
-        "notes": "4 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/onions/",
-        "category": "onions"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/onions",
-        "category": "onions"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/shallots/",
+      "category": "shallots",
+      "notes": "4 products available in this category"
+    }
   },
   {
     "id": 34,
@@ -3737,24 +3346,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
-        "category": "onions",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/onions/",
-        "category": "onions"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/onions",
-        "category": "onions"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
+      "category": "onions",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 35,
@@ -3833,24 +3430,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/herbs/basil/",
-        "category": "basil",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/herbs/basil/",
-        "category": "basil"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/basil",
-        "category": "basil"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/basil/",
+      "category": "basil",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 36,
@@ -3946,24 +3531,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/herbs/cilantro/",
-        "category": "cilantro",
-        "notes": "1 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/herbs/cilantro/",
-        "category": "cilantro"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/cilantro",
-        "category": "cilantro"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/cilantro/",
+      "category": "cilantro",
+      "notes": "1 products available in this category"
+    }
   },
   {
     "id": 37,
@@ -4059,24 +3632,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/herbs/parsley/",
-        "category": "parsley",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/herbs/parsley/",
-        "category": "parsley"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/parsley",
-        "category": "parsley"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/parsley/",
+      "category": "parsley",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 38,
@@ -4174,24 +3735,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
-        "category": "corn",
-        "notes": "7 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/corn/",
-        "category": "corn"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/corn",
-        "category": "corn"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
+      "category": "corn",
+      "notes": "7 products available in this category"
+    }
   },
   {
     "id": 39,
@@ -4288,24 +3837,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/pumpkins/",
-        "category": "pumpkins",
-        "notes": "11 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/pumpkins/",
-        "category": "pumpkins"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/pumpkins",
-        "category": "pumpkins"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/pumpkins/",
+      "category": "pumpkins",
+      "notes": "11 products available in this category"
+    }
   },
   {
     "id": 40,
@@ -4402,24 +3939,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
-        "category": "corn",
-        "notes": "7 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/squash/",
-        "category": "squash"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/summer-squash",
-        "category": "squash"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
+      "category": "corn",
+      "notes": "7 products available in this category"
+    }
   },
   {
     "id": 41,
@@ -4515,24 +4040,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/asparagus/",
-        "category": "asparagus",
-        "notes": "6 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/asparagus/",
-        "category": "asparagus"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/asparagus",
-        "category": "asparagus"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/asparagus/",
+      "category": "asparagus",
+      "notes": "6 products available in this category"
+    }
   },
   {
     "id": 42,
@@ -4629,19 +4142,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/fruit/strawberries/",
-        "category": "strawberries",
-        "notes": "1 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/fruit/strawberries/",
-        "category": "strawberries"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/fruit/strawberries/",
+      "category": "strawberries",
+      "notes": "1 products available in this category"
+    }
   },
   {
     "id": 43,
@@ -4738,24 +4244,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/mustard/",
-        "category": "mustard",
-        "notes": "1 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/greens/",
-        "category": "greens"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/greens",
-        "category": "greens"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/mustard/",
+      "category": "mustard",
+      "notes": "1 products available in this category"
+    }
   },
   {
     "id": 44,
@@ -4852,24 +4346,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
-        "category": "greens",
-        "notes": "12 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/greens/",
-        "category": "greens"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/greens",
-        "category": "greens"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
+      "category": "greens",
+      "notes": "12 products available in this category"
+    }
   },
   {
     "id": 45,
@@ -4965,24 +4447,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/kohlrabi/",
-        "category": "kohlrabi",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/kohlrabi/",
-        "category": "kohlrabi"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/kohlrabi",
-        "category": "kohlrabi"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/kohlrabi/",
+      "category": "kohlrabi",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 46,
@@ -5077,24 +4547,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/rutabaga/",
-        "category": "rutabaga",
-        "notes": "1 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/rutabaga/",
-        "category": "rutabaga"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/rutabaga",
-        "category": "rutabaga"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/rutabaga/",
+      "category": "rutabaga",
+      "notes": "1 products available in this category"
+    }
   },
   {
     "id": 47,
@@ -5191,24 +4649,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/tomatillos/",
-        "category": "tomatillos",
-        "notes": "4 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/tomatillos/",
-        "category": "tomatillos"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/tomatillos",
-        "category": "tomatillos"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/tomatillos/",
+      "category": "tomatillos",
+      "notes": "4 products available in this category"
+    }
   },
   {
     "id": 48,
@@ -5305,19 +4751,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
-        "category": "squash",
-        "notes": "5 products available in this category"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/winter-squash",
-        "category": "winter-squash"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    }
   },
   {
     "id": 49,
@@ -5414,24 +4853,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
-        "category": "beans",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/beans/",
-        "category": "beans"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/beans",
-        "category": "beans"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    }
   },
   {
     "id": 50,
@@ -5578,23 +5005,11 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
-    "seed_sources": [
-      {
-        "supplier": "Johnny's Selected Seeds",
-        "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
-        "category": "beans",
-        "notes": "9 products available in this category"
-      },
-      {
-        "supplier": "Burpee",
-        "category_url": "https://www.burpee.com/vegetables/beans/",
-        "category": "beans"
-      },
-      {
-        "supplier": "Hoss Tools",
-        "category_url": "https://growhoss.com/collections/beans",
-        "category": "beans"
-      }
-    ]
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    }
   }
 ]

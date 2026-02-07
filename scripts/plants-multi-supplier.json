@@ -95,6 +95,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/tomatoes/",
+      "category": "tomatoes",
+      "notes": "8 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -192,6 +198,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
+      "category": "peppers",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -288,6 +300,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cucumbers/",
+      "category": "cucumbers",
+      "notes": "10 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -401,6 +419,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -514,6 +538,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/carrots/",
+      "category": "carrots",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -609,6 +639,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/lettuce/",
+      "category": "lettuce",
+      "notes": "4 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -722,6 +758,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/spinach/",
+      "category": "spinach",
+      "notes": "10 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -835,6 +877,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -948,6 +996,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/broccoli/",
+      "category": "broccoli",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1062,6 +1116,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/kale/",
+      "category": "kale",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1176,6 +1236,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1284,6 +1350,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
+      "category": "potatoes",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1398,6 +1470,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/potatoes/",
+      "category": "potatoes",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1511,6 +1589,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
+      "category": "onions",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1606,6 +1690,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/garlic/",
+      "category": "garlic",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1719,6 +1809,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cabbage/",
+      "category": "cabbage",
+      "notes": "8 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1883,6 +1979,12 @@
     ],
     "plants_per_sqft": 8,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peas/",
+      "category": "peas",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -1997,6 +2099,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/eggplant/",
+      "category": "eggplant",
+      "notes": "10 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2108,6 +2216,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/radishes/",
+      "category": "radishes",
+      "notes": "10 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2219,6 +2333,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beets/",
+      "category": "beets",
+      "notes": "8 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2317,6 +2437,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/peppers/",
+      "category": "peppers",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2414,6 +2540,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
+      "category": "melons",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2511,6 +2643,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/melons/",
+      "category": "melons",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2624,6 +2762,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
+      "category": "greens",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2737,6 +2881,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/swiss-chard/",
+      "category": "swiss-chard",
+      "notes": "7 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2851,6 +3001,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/collards/",
+      "category": "collards",
+      "notes": "3 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -2963,6 +3119,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/turnips/",
+      "category": "turnips",
+      "notes": "4 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3076,6 +3238,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/parsnips/",
+      "category": "parsnips",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3189,6 +3357,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/brussels-sprouts/",
+      "category": "brussels-sprouts",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3302,6 +3476,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/cauliflower/",
+      "category": "cauliflower",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3398,6 +3578,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3511,6 +3697,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/leeks/",
+      "category": "leeks",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3624,6 +3816,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/shallots/",
+      "category": "shallots",
+      "notes": "4 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3737,6 +3935,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/onions/",
+      "category": "onions",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3833,6 +4037,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/basil/",
+      "category": "basil",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -3946,6 +4156,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/cilantro/",
+      "category": "cilantro",
+      "notes": "1 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4059,6 +4275,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/herbs/parsley/",
+      "category": "parsley",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4174,6 +4396,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
+      "category": "corn",
+      "notes": "7 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4288,6 +4516,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/pumpkins/",
+      "category": "pumpkins",
+      "notes": "11 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4402,6 +4636,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/corn/",
+      "category": "corn",
+      "notes": "7 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4515,6 +4755,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/asparagus/",
+      "category": "asparagus",
+      "notes": "6 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4629,6 +4875,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/fruit/strawberries/",
+      "category": "strawberries",
+      "notes": "1 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4738,6 +4990,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/mustard/",
+      "category": "mustard",
+      "notes": "1 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4852,6 +5110,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/greens/",
+      "category": "greens",
+      "notes": "12 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -4965,6 +5229,12 @@
     ],
     "plants_per_sqft": 4,
     "greenhouse_priority": 1,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/kohlrabi/",
+      "category": "kohlrabi",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -5077,6 +5347,12 @@
     ],
     "plants_per_sqft": 16,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/rutabaga/",
+      "category": "rutabaga",
+      "notes": "1 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -5191,6 +5467,12 @@
     ],
     "plants_per_sqft": 1,
     "greenhouse_priority": 4,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/tomatillos/",
+      "category": "tomatillos",
+      "notes": "4 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -5305,6 +5587,12 @@
     ],
     "plants_per_sqft": 0.5,
     "greenhouse_priority": 3,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/squash/",
+      "category": "squash",
+      "notes": "5 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -5414,6 +5702,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",
@@ -5578,6 +5872,12 @@
     ],
     "plants_per_sqft": 9,
     "greenhouse_priority": 2,
+    "seed_source": {
+      "supplier": "Johnny's Selected Seeds",
+      "category_url": "https://www.johnnyseeds.com/vegetables/beans/",
+      "category": "beans",
+      "notes": "9 products available in this category"
+    },
     "seed_sources": [
       {
         "supplier": "Johnny's Selected Seeds",

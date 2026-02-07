@@ -29,16 +29,41 @@ export function populateRecipeOptions(recipes) {
   });
 }
 
-export function showPlan(plan) {
+// Helper function to get seed URL for a plant based on selected supplier
+function getSeedUrl(plant, supplierKey) {
+  if (!plant.seed_sources || plant.seed_sources.length === 0) {
+    return null;
+  }
+
+  const supplierNames = {
+    'johnnys': "Johnny's Selected Seeds",
+    'burpee': 'Burpee',
+    'hoss': 'Hoss Tools'
+  };
+
+  const supplierName = supplierNames[supplierKey];
+  const source = plant.seed_sources.find(s => s.supplier === supplierName);
+  return source ? source.category_url : null;
+}
+
+export function showPlan(plan, supplierKey = 'johnnys') {
   const section = document.getElementById('plan-section');
   const details = document.getElementById('plan-details');
   section.style.display = 'block';
+
+  // Sort items by seed start week (earliest first)
+  const sortedItems = [...plan.items].sort((a, b) => {
+    const aWeek = a.schedule?.seed_start_week || 999;
+    const bWeek = b.schedule?.seed_start_week || 999;
+    return aWeek - bWeek;
+  });
 
   let html = '<h3>Planting Summary</h3>';
   html += '<table>';
   html += '<tr>';
   html += '<th>Crop</th>';
   html += '<th>Category</th>';
+  html += '<th>📅 First Seed<br>Start Week</th>';
   html += '<th>🏠 Greenhouse<br>Plants</th>';
   html += '<th>🏠 Greenhouse<br>Space (sqft)</th>';
   html += '<th>🌞 Outdoor<br>Plants</th>';
@@ -49,7 +74,7 @@ export function showPlan(plan) {
   html += '<th>Total Yield<br>(lbs)</th>';
   html += '</tr>';
 
-  plan.items.forEach(it => {
+  sortedItems.forEach(it => {
     const greenhousePlants = it.greenhousePlants || 0;
     const outdoorPlants = it.outdoorPlants || it.count;
     const greenhouseSqft = it.greenhouseSqft || 0;
@@ -66,8 +91,25 @@ export function showPlan(plan) {
     }
 
     html += `<tr style="${rowStyle}">`;
-    html += `<td><strong>${it.plant.name}</strong></td>`;
+
+    // Make plant name a link if seed URL is available
+    const seedUrl = getSeedUrl(it.plant, supplierKey);
+    if (seedUrl) {
+      html += `<td><strong><a href="${seedUrl}" target="_blank" style="color: #2e7d32; text-decoration: none; border-bottom: 1px dashed #2e7d32;" title="Buy seeds from selected supplier">${it.plant.name} 🔗</a></strong></td>`;
+    } else {
+      html += `<td><strong>${it.plant.name}</strong></td>`;
+    }
+
     html += `<td>${it.category}</td>`;
+
+    // Display seed start week
+    const seedStartWeek = it.schedule?.seed_start_week;
+    if (seedStartWeek) {
+      html += `<td style="font-weight: bold; color: #1976d2;">Week ${seedStartWeek}</td>`;
+    } else {
+      html += `<td>-</td>`;
+    }
+
     html += `<td>${greenhousePlants}</td>`;
     html += `<td>${greenhouseSqft.toFixed(1)}</td>`;
     html += `<td>${outdoorPlants}</td>`;
@@ -85,7 +127,7 @@ export function showPlan(plan) {
 
   // Add summary row
   html += `<tr style="background-color: #e3f2fd; font-weight: bold; border-top: 3px solid #333;">`;
-  html += `<td colspan="2">TOTALS</td>`;
+  html += `<td colspan="3">TOTALS</td>`;
   html += `<td>${totalGreenhousePlants}</td>`;
   html += `<td>${plan.greenhouseSqftUsed.toFixed(1)}</td>`;
   html += `<td>${totalOutdoorPlants}</td>`;

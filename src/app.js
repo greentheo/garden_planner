@@ -25,6 +25,7 @@ document.getElementById('garden-form').addEventListener('submit', e => {
   const gardenSize = gardenSizeInput ? parseFloat(gardenSizeInput) : null;
   const greenhouseSqft = parseInt(document.getElementById('greenhouse-sqft').value, 10) || 0;
   const foodSupplementationPercent = parseInt(document.getElementById('food-supplementation').value, 10);
+  const seedSupplier = document.getElementById('seed-supplier').value;
 
   try {
     const plan = calculatePlan({
@@ -37,7 +38,7 @@ document.getElementById('garden-form').addEventListener('submit', e => {
       greenhouseSqft,
       foodSupplementationPercent
     });
-    showPlan(plan);
+    showPlan(plan, seedSupplier);
 
     // Track successful plan generation in Google Analytics
     if (typeof gtag !== 'undefined') {
