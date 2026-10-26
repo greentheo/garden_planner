@@ -1,5 +1,13 @@
 # Garden Planner Web App
 
+> The original product spec, kept for the record. The build diverged from it in
+> several places: there is no build step (ES modules are served as-is), no PDF
+> export, no drag-and-drop on the Gantt chart, no `zone_map.json`, no
+> `localStorage` persistence, and it is hosted on GitHub Pages rather than
+> Cloudflare. The crop data model also grew well past the sketch in section 6 —
+> see [`data-model.md`](data-model.md) for what it actually looks like, and
+> [`model.md`](model.md) for what the engine actually computes.
+
 ## 1. Purpose
 Create a **stand‑alone, client‑side web application** that generates a personalized garden plan and a Gantt‑style implementation schedule. The user supplies:
 
