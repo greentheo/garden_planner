@@ -434,7 +434,7 @@ export function calculatePlan({
   const totalPlants = items.reduce((sum, it) => sum + it.count, 0);
   const totalYield = items.reduce((sum, it) => sum + it.totalPounds, 0);
   const avgCaloriesPerLb = totalYield > 0 ? totalCaloriesProduced / totalYield : 0;
-  const percentFilled = (totalCaloriesProduced / totalCaloriesNeeded * 100).toFixed(1);
+  const percentFilled = (totalCaloriesNeeded > 0 ? totalCaloriesProduced / totalCaloriesNeeded * 100 : 0).toFixed(1);
 
   return {
     zone,
